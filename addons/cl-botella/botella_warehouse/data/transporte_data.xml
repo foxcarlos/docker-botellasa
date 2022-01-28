@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8'?>
+    <openerp>
+        <data noupdate='1'>
+        <record id='sequence_transporte' model='ir.sequence'>
+            <field name='name'>Secuencia Transporte</field>
+            <field name='implementation'>standard</field>
+            <field name='prefix'>Panto/TRAN/</field>
+            <field name='padding'>5</field>
+            <field name='number_increment'>1</field>
+            <field name='number_next_val'>1</field>
+            <field name='active'>True</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+        </record>
+
+        <record id='location_transporte' model='stock.location'>
+            <field name='name'>Transporte</field>
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>PANTO-TRANSPORTE</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' model='stock.location' search="[('name','=','Panto')]"/>
+        </record>
+
+        <record id='stock_type_transporte' model='stock.picking.type'>
+            <field name='name'>Transporte</field>
+            <field ref='sequence_transporte' name='sequence_id'/>
+            <field name='code'>internal</field>
+            <field name='active'>True</field>
+            <field ref='location_transporte' name='default_location_src_id'/>
+            <field name='default_location_dest_id' model='stock.location' search="[('name','=','Clientes')]"/>
+
+            <field name='active'>True</field>
+            <field name='warehouse_id' model='stock.warehouse' search="[('name','=','Pantos')]"/>
+            <field name='barcode'>PANTO-TRANSPORTE</field>
+        </record>
+
+
+    </data>
+</openerp>

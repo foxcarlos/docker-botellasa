@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="product_flag" inherit_id="website_sale.products_item">
+        <xpath expr="//div[hasclass('pro-img')]" position="inside">
+            <t t-if="product.country_id">
+                <img t-attf-src="/web/image/res.country/#{product.country_id.id}/image" class="ti-bodegaflag" t-att-title="product.product_brand_id.country_id.name"/>
+            </t>
+        </xpath>
+    </template>
+
+    <template id="product_flag_brand" inherit_id="atharva_theme_general.s_brand_collection_configure">
+        <xpath expr="//div[hasclass('brand-img')]" position="inside">
+            <t t-if="brand.brand_id.country_id">
+                <img t-attf-src="/web/image/res.country/#{brand.brand_id.country_id.id}/image" class="ti-bodegaflag" t-att-title="brand.brand_id.country_id.name"/>
+            </t>
+        </xpath>
+    </template>
+
+</odoo>

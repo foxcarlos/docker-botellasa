@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record model="ir.ui.view" id="product_form_view">
+        <field name="name">product</field>
+        <field name="model">product.template</field>
+        <field name="inherit_id" ref="product.product_template_only_form_view"/>
+        <field name="arch" type="xml">
+            <field name="categ_id" position="after">
+                <field name="area"/>
+                <field name="short_description" attrs="{'invisible':[('area', '=', False)]}"/>
+                <field name="long_description" attrs="{'invisible':[('area', '=', False)]}"/>
+                <field name="coleccion" attrs="{'invisible':[('area', '!=', 'Cristaleria')]}"/>
+                <field name="modelo" attrs="{'invisible':[('area', '!=', 'Cristaleria')]}"/>
+                <field name="marca" attrs="{'invisible':[('area', '=', False)]}"/>
+                <field name="product" attrs="{'invisible':[('area', '=', False)]}"/>
+
+
+                <!--TODO: mover varietal_id y varietal_web a filter module
+                <field name="variedad_id"/>
+                <field name="varietal_web"/>
+            -->
+
+                <field name="alcohol" attrs="{'invisible':[('area', 'not in', ['Vinos','Cerveza'])]}"/>
+                <field name="enologo" attrs="{'invisible':[('area', '!=', 'Vinos')]}"/>
+                <field name="volumen_cristaleria" attrs="{'invisible':[('area', '!=', 'Cristaleria')]}"/>
+
+            </field>
+            <!--<field name="company_id" position="after">
+                <field name="precio_euros_bodega"/>
+                <field name="landed_cost_euros"/>
+                <field name="inv_inal"/>
+                <field name="fecha_vencimiento"/>
+                <field name="despacho_aduanero"/>
+                <field name="lote"/>
+                <field name="comision_ventas"/>
+                <field name="comision_cobranzas"/>
+            </field>-->
+            <!--<xpath expr="//group[@name='group_lots_and_weight']" position="inside">
+                <field name="gross_weight"/>
+            </xpath>
+             <xpath expr="//group[@name='group_lots_and_weight']" position="inside">
+                <field name="weight"/>
+            </xpath> -->
+            <page name="general_information" position="after" >
+                <page name="aditional_information" string="Informacion Adicional" attrs="{'invisible':[('area', '!=', 'Vinos')]}">
+                    <sheet>
+                        <group>
+                            <group name="elaboracion" string="Elaboración y Crianza">
+                                <field name="elaboracion_crianza_corta"/>
+                                <field name="elaboracion_crianza_larga"/>
+                            </group>
+
+                            <group name="elaboracion" string="Método">
+                                <field name="metodo_fabricacion_corto"/>
+                                <field name="metodo_fabricacion_largo"/>
+                                <field name="notas_cata"/>
+                                <field name="maridaje"/>
+                            </group>
+
+
+                            <group name="puntajes" string="Puntajes">
+                                <field name="denominacion_origen"/>
+                                <field name="puntaje_parker"/>
+                                <field name="puntaje_wine_enthusiast"/>
+                                <field name="puntaje_jancis_robinson"/>
+                                <field name="puntaje_wine_spectator"/>
+                                <field name="puntaje_james_suckling"/>
+                                <field name="puntaje_tim_atkin"/>
+                                <field name="puntaje_international_wine_challenge"/>
+                                <field name="puntaje_decanter"/>
+                                <field name="puntaje_guia_penin"/>
+                                <field name="puntaje_descorchados"/>
+                                <field name="puntajes" attrs="{'invisible':[('area', '!=', 'Vinos')]}"/>
+                            </group>
+
+                        </group>
+
+                    </sheet>
+                </page>
+            </page>
+        </field>
+        </record>
+    </data>
+</odoo>

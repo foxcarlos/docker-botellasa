@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <template id="pricefilter_product" name="Price Filter" inherit_id="website_sale.products_attributes">
+        <xpath expr="//form[hasclass('js_attributes')]" position="after">
+            <div class="slider-price-filter">
+                <!--
+                <div class="div_class_price_filter_heading spf-title">
+                    <h2 class="refined-by-attr">Precio</h2>
+                </div>
+                -->
+                <div class="form_class price_filter_main spf-box">
+                    <div data-role="rangeslider">
+                        <t t-set="custom_min_val" t-value="custom_min_val or min_val"/>
+                        <t t-set="custom_max_val" t-value="custom_max_val or max_val"/>
+                        <!--
+                        <div id="slider-range">
+                            <input name="price_filter" id="price_filter_input" type="text" class="span2" value="" t-att-data-slider-min="floor(min_val)" t-att-data-slider-max="ceil(max_val)" data-slider-step="1" t-att-data-slider-value="[custom_min_val,custom_max_val]" t-att-data-value="custom_min_val,custom_max_val" data-provide="slider"/>
+                        </div>
+                        <div id="priceform" class="spf-action">
+                            <div class="price_filter_details">
+                                <span class="text_min_val" t-esc="round(custom_min_val)"/>
+                                <span>&amp;nbsp;-&amp;nbsp;</span>
+                                <span class="text_max_val" t-esc="round(custom_max_val)"/>
+                            </div>
+                            <button class="apply_price_filter">Aplicar</button>
+                        </div>
+                        -->
+                    </div>
+                </div>
+            </div>
+        </xpath>
+        <xpath expr="//form[hasclass('js_attributes')]" position="inside">
+            <!--div class="slider-price-filter"-->
+                <!--div class="div_class_price_filter_heading spf-title">
+                    <h2 class="refined-by-attr">Precios ($)</h2>
+                </div-->
+                <div id="price_name">
+                        <strong>Precios ($)</strong>
+                    </div>
+                <div >
+                    <div class="row">
+                        <span style="width:calc(50% - 30px);text-align:center;">Min.</span>
+                        <span>&amp;nbsp; &amp;nbsp;</span>
+                        <span style="width:calc(50% - 30px);text-align:center;">Máx.</span>
+                    </div>
+                    <div class="row">
+                        <input name="min_val" t-att-value="custom_min_val" id="min_val" style="width:calc(50% - 30px);text-align:center;"/>
+                        <span>&amp;nbsp;-&amp;nbsp;</span>
+                        <input name="max_val" t-att-value="custom_max_val" id="max_val" style="width:calc(50% - 30px);text-align:center;"/>
+                    </div>
+                </div>
+            <!--/div-->
+        </xpath>
+    </template>
+</odoo>

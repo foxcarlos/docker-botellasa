@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<template id="add_logo_to_website" inherit_id="website.layout_logo_show" name="Show website Logo" customize_show="True" active="True">
+        <xpath expr="//header//a[hasclass('navbar-brand')]" position="replace">
+            <a href="/" class="navbar-brand logo">
+                <!-- <span t-field="res_company.logo" t-options="{'widget': 'image'}" role="img" t-att-aria-label="'Logo of %s' % res_company.name" t-att-title="res_company.name" /> -->
+             <img t-attf-src="/logo.png?company_id=#{res_company.id}" style="width:100px;height:100px;"/>
+            </a>
+        </xpath>
+    </template>
+
+
+</odoo>
+
+

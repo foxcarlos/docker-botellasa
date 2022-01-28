@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <!-- Zona filter -->
+    <template id="list_zones">
+        <ul class="nav nav-pills flex-column pro_zona">
+            <t t-foreach="zonas" t-as="zona">
+                <li class="nav-item">
+                    <label style="margin: 0 20px;" t-attf-class="nav-link#{' active' if zona.id in zona_set else ''}">
+                        <input type="checkbox"
+                        name="zonas"
+                        t-att-value="'%s-%s' % (zona.name,zona.id)"
+                        t-att-checked="'checked' if zona.id in zona_set else None"/>
+                        <span style="font-weight: normal"
+                            t-field="zona.name" />
+                    </label>
+                </li>
+            </t>
+        </ul>
+    </template>
+    <template id="website_product_zona_filter"
+        inherit_id="website_sale.products_attributes"
+        name="Product Zona's Filter"
+        customize_show="True" active="True">
+        <xpath expr="//form[hasclass('js_attributes')]//ul[hasclass('nav')]" position="inside">
+            <t t-if="zonas">
+                <li class="zona_clear">
+                    <div id="zona_name">
+                        <strong>Zona</strong>
+                    </div>
+                    <t t-if="len(zonas)&gt;4">
+                        <div id='filter_div'>
+                            <t t-call="botella_website_filters.list_zones" />
+                        </div>
+                    </t>
+                    <t t-if="len(zonas)&lt;=4">
+                        <t t-call="botella_website_filters.list_zones" />
+                    </t>
+                </li>
+            </t>
+        </xpath>
+    </template>
+</odoo>

@@ -1,0 +1,2738 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<odoo>
+    <data noupdate='1'>
+
+        <record id='stock.stock_location_stock' model='stock.location'>
+            <field name='usage'>view</field>
+        </record>
+        <record id='location_b' model='stock.location'>
+            <field name='name'>B</field>
+            <field name='usage'>view</field>
+            <field name='active'>True</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' model='stock.location'  search="[('barcode','=','WH-STOCK')]"/>
+        </record>
+        <record id='location_b_001' model='stock.location'>
+            <field name='name'>B-001</field>
+            <field name='usage'>view</field>
+            <field name='active'>True</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_b"/>
+        </record>
+        <record id='location_b_002' model='stock.location'>
+            <field name='name'>B-002</field>
+            <field name='usage'>view</field>
+            <field name='active'>True</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_b"/>
+        </record>
+        <record id='location_b_003' model='stock.location'>
+            <field name='name'>B-003</field>
+            <field name='usage'>view</field>
+            <field name='active'>True</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_b"/>
+        </record>
+        <record id='location_b_004' model='stock.location'>
+            <field name='name'>B-004</field>
+            <field name='usage'>view</field>
+            <field name='active'>True</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_b"/>
+        </record>
+        <record id='location_b_005' model='stock.location'>
+            <field name='name'>B-005</field>
+            <field name='usage'>view</field>
+            <field name='active'>True</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_b"/>
+        </record>
+        <record id='location_b_006' model='stock.location'>
+            <field name='name'>B-006</field>
+            <field name='usage'>view</field>
+            <field name='active'>True</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_b"/>
+        </record>
+        <record id='location_b_007' model='stock.location'>
+            <field name='name'>B-007</field>
+            <field name='usage'>view</field>
+            <field name='active'>True</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_b"/>
+        </record>
+        <record id='location_b_008' model='stock.location'>
+            <field name='name'>B-008</field>
+            <field name='usage'>view</field>
+            <field name='active'>True</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_b"/>
+        </record>
+        <record id='location_b_009' model='stock.location'>
+            <field name='name'>B-009</field>
+            <field name='usage'>view</field>
+            <field name='active'>True</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_b"/>
+        </record>
+        <record id='location_b_010' model='stock.location'>
+            <field name='name'>B-010</field>
+            <field name='usage'>view</field>
+            <field name='active'>True</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_b"/>
+        </record>
+        <record id='location_b_011' model='stock.location'>
+            <field name='name'>B-011</field>
+            <field name='usage'>view</field>
+            <field name='active'>True</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_b"/>
+        </record>
+        <record id='location_b_012' model='stock.location'>
+            <field name='name'>B-012</field>
+            <field name='usage'>view</field>
+            <field name='active'>True</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_b"/>
+        </record>
+        <record id='location_b_021' model='stock.location'>
+            <field name='name'>B-021</field>
+            <field name='usage'>view</field>
+            <field name='active'>True</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_b"/>
+        </record>
+        <record id='location_b_022' model='stock.location'>
+            <field name='name'>B-022</field>
+            <field name='usage'>view</field>
+            <field name='active'>True</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_b"/>
+        </record>
+
+        <record id='location_c' model='stock.location'>
+            <field name='name'>C</field>
+            <field name='usage'>view</field>
+            <field name='active'>True</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' model='stock.location'  search="[('barcode','=','WH-STOCK')]"/>
+        </record>
+        <record id='location_c_001' model='stock.location'>
+            <field name='name'>C-001</field>
+            <field name='usage'>view</field>
+            <field name='active'>True</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_c"/>
+        </record>
+        <record id='location_c_002' model='stock.location'>
+            <field name='name'>C-002</field>
+            <field name='usage'>view</field>
+            <field name='active'>True</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_c"/>
+        </record>
+        <record id='location_c_003' model='stock.location'>
+            <field name='name'>C-003</field>
+            <field name='usage'>view</field>
+            <field name='active'>True</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_c"/>
+        </record>
+        <record id='location_c_004' model='stock.location'>
+            <field name='name'>C-004</field>
+            <field name='usage'>view</field>
+            <field name='active'>True</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_c"/>
+        </record>
+        <record id='location_c_005' model='stock.location'>
+            <field name='name'>C-005</field>
+            <field name='usage'>view</field>
+            <field name='active'>True</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_c"/>
+        </record>
+        <record id='location_c_006' model='stock.location'>
+            <field name='name'>C-006</field>
+            <field name='usage'>view</field>
+            <field name='active'>True</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_c"/>
+        </record>
+        <record id='location_c_007' model='stock.location'>
+            <field name='name'>C-007</field>
+            <field name='usage'>view</field>
+            <field name='active'>True</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_c"/>
+        </record>
+        <record id='location_c_008' model='stock.location'>
+            <field name='name'>C-008</field>
+            <field name='usage'>view</field>
+            <field name='active'>True</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_c"/>
+        </record>
+        <record id='location_c_009' model='stock.location'>
+            <field name='name'>C-009</field>
+            <field name='usage'>view</field>
+            <field name='active'>True</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_c"/>
+        </record>
+        <record id='location_c_010' model='stock.location'>
+            <field name='name'>C-010</field>
+            <field name='usage'>view</field>
+            <field name='active'>True</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_c"/>
+        </record>
+        <record id='location_c_011' model='stock.location'>
+            <field name='name'>C-011</field>
+            <field name='usage'>view</field>
+            <field name='active'>True</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_c"/>
+        </record>
+        <record id='location_c_012' model='stock.location'>
+            <field name='name'>C-012</field>
+            <field name='usage'>view</field>
+            <field name='active'>True</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_c"/>
+        </record>
+
+
+
+        <record id='location_1' model='stock.location'>
+            <field name='name'>B-001-010</field>
+            <field name='posx'>1</field>
+            <field name='posy'>001</field>
+            <field name='posz'>010</field>
+            <!--<field ref='ubicacion_004' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>B-001-010</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_b_001"/>
+        </record>
+        <record id='location_1_011' model='stock.location'>
+            <field name='name'>B-001-011</field>
+            <field name='posx'>1</field>
+            <field name='posy'>001</field>
+            <field name='posz'>011</field>
+            <!--<field ref='ubicacion_004' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>B-001-011</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_b_001"/>
+        </record>
+        <record id='location_2' model='stock.location'>
+            <field name='name'>B-002-010</field>
+            <field name='posx'>1</field>
+            <field name='posy'>002</field>
+            <field name='posz'>010</field>
+            <!--<field ref='ubicacion_004' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>B-002-010</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_b_002"/>
+        </record>
+        <record id='location_2_011' model='stock.location'>
+            <field name='name'>B-002-011</field>
+            <field name='posx'>1</field>
+            <field name='posy'>002</field>
+            <field name='posz'>011</field>
+            <!--<field ref='ubicacion_004' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>B-002-011</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_b_002"/>
+        </record>
+        <record id='location_3' model='stock.location'>
+            <field name='name'>B-001-012</field>
+            <field name='posx'>1</field>
+            <field name='posy'>001</field>
+            <field name='posz'>012</field>
+            <!--<field ref='ubicacion_007' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>B-001-012</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_b_001"/>
+        </record>
+        <record id='location_4' model='stock.location'>
+            <field name='name'>B-002-012</field>
+            <field name='posx'>1</field>
+            <field name='posy'>002</field>
+            <field name='posz'>012</field>
+            <!--<field ref='ubicacion_007' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>B-002-012</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_b_002"/>
+        </record>
+        <record id='location_5' model='stock.location'>
+            <field name='name'>B-001-014</field>
+            <field name='posx'>1</field>
+            <field name='posy'>001</field>
+            <field name='posz'>014</field>
+            <!--<field ref='ubicacion_008' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>B-001-014</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_b_001"/>
+        </record>
+        <record id='location_6' model='stock.location'>
+            <field name='name'>B-002-014</field>
+            <field name='posx'>1</field>
+            <field name='posy'>002</field>
+            <field name='posz'>014</field>
+            <!--<field ref='ubicacion_008' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>B-002-014</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_b_002"/>
+        </record>
+        <record id='location_7' model='stock.location'>
+            <field name='name'>B-003-010</field>
+            <field name='posx'>1</field>
+            <field name='posy'>003</field>
+            <field name='posz'>010</field>
+            <!--<field ref='ubicacion_004' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>B-003-010</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_b_003"/>
+        </record>
+
+        <record id='location_8' model='stock.location'>
+            <field name='name'>B-004-010</field>
+            <field name='posx'>1</field>
+            <field name='posy'>004</field>
+            <field name='posz'>010</field>
+            <!--<field ref='ubicacion_004' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>B-004-010</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_b_004"/>
+        </record>
+        <record id='location_9' model='stock.location'>
+            <field name='name'>B-003-012</field>
+            <field name='posx'>1</field>
+            <field name='posy'>003</field>
+            <field name='posz'>012</field>
+            <!--<field ref='ubicacion_007' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>B-003-012</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_b_003"/>
+        </record>
+        <record id='location_10' model='stock.location'>
+            <field name='name'>B-004-012</field>
+            <field name='posx'>1</field>
+            <field name='posy'>004</field>
+            <field name='posz'>012</field>
+            <!--<field ref='ubicacion_007' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>B-004-012</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_b_004"/>
+        </record>
+        <record id='location_11' model='stock.location'>
+            <field name='name'>B-003-014</field>
+            <field name='posx'>1</field>
+            <field name='posy'>003</field>
+            <field name='posz'>014</field>
+            <!--<field ref='ubicacion_008' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>B-003-014</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_b_003"/>
+        </record>
+        <record id='location_12' model='stock.location'>
+            <field name='name'>B-004-014</field>
+            <field name='posx'>1</field>
+            <field name='posy'>004</field>
+            <field name='posz'>014</field>
+            <!--<field ref='ubicacion_008' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>B-004-014</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_b_004"/>
+        </record>
+        <record id='location_13' model='stock.location'>
+            <field name='name'>B-005-010</field>
+            <field name='posx'>1</field>
+            <field name='posy'>005</field>
+            <field name='posz'>010</field>
+            <!--<field ref='ubicacion_004' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>B-005-010</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_b_005"/>
+        </record>
+        <record id='location_14' model='stock.location'>
+            <field name='name'>B-006-010</field>
+            <field name='posx'>1</field>
+            <field name='posy'>006</field>
+            <field name='posz'>010</field>
+            <!--<field ref='ubicacion_004' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>B-006-010</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_b_006"/>
+        </record>
+        <record id='location_15' model='stock.location'>
+            <field name='name'>B-005-012</field>
+            <field name='posx'>1</field>
+            <field name='posy'>005</field>
+            <field name='posz'>012</field>
+            <!--<field ref='ubicacion_007' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>B-005-012</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_b_005"/>
+        </record>
+        <record id='location_16' model='stock.location'>
+            <field name='name'>B-006-012</field>
+            <field name='posx'>1</field>
+            <field name='posy'>006</field>
+            <field name='posz'>012</field>
+            <!--<field ref='ubicacion_007' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>B-006-012</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_b_006"/>
+        </record>
+        <record id='location_17' model='stock.location'>
+            <field name='name'>B-005-014</field>
+            <field name='posx'>1</field>
+            <field name='posy'>005</field>
+            <field name='posz'>014</field>
+            <!--<field ref='ubicacion_008' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>B-005-014</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_b_005"/>
+        </record>
+        <record id='location_18' model='stock.location'>
+            <field name='name'>B-006-014</field>
+            <field name='posx'>1</field>
+            <field name='posy'>006</field>
+            <field name='posz'>014</field>
+            <!--<field ref='ubicacion_008' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>B-006-014</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_b_006"/>
+        </record>
+        <record id='location_19' model='stock.location'>
+            <field name='name'>B-007-010</field>
+            <field name='posx'>1</field>
+            <field name='posy'>007</field>
+            <field name='posz'>010</field>
+            <!--<field ref='ubicacion_004' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>B-007-010</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_b_007"/>
+        </record>
+        <record id='location_20' model='stock.location'>
+            <field name='name'>B-008-010</field>
+            <field name='posx'>1</field>
+            <field name='posy'>008</field>
+            <field name='posz'>010</field>
+            <!--<field ref='ubicacion_004' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>B-008-010</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_b_008"/>
+        </record>
+        <record id='location_21' model='stock.location'>
+            <field name='name'>B-009-010</field>
+            <field name='posx'>1</field>
+            <field name='posy'>009</field>
+            <field name='posz'>010</field>
+            <!--<field ref='ubicacion_004' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>B-009-010</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_b_009"/>
+        </record>
+        <record id='location_22' model='stock.location'>
+            <field name='name'>B-010-010</field>
+            <field name='posx'>1</field>
+            <field name='posy'>010</field>
+            <field name='posz'>010</field>
+            <!--<field ref='ubicacion_004' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>B-010-010</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_b_010"/>
+        </record>
+        <record id='location_23' model='stock.location'>
+            <field name='name'>B-009-012</field>
+            <field name='posx'>1</field>
+            <field name='posy'>009</field>
+            <field name='posz'>012</field>
+            <!--<field ref='ubicacion_007' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>B-009-012</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_b_009"/>
+        </record>
+        <record id='location_24' model='stock.location'>
+            <field name='name'>B-010-012</field>
+            <field name='posx'>1</field>
+            <field name='posy'>010</field>
+            <field name='posz'>012</field>
+            <!--<field ref='ubicacion_007' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>B-010-012</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_b_010"/>
+        </record>
+        <record id='location_25' model='stock.location'>
+            <field name='name'>B-009-014</field>
+            <field name='posx'>1</field>
+            <field name='posy'>009</field>
+            <field name='posz'>014</field>
+            <!--<field ref='ubicacion_008' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>B-009-014</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_b_009"/>
+        </record>
+        <record id='location_26' model='stock.location'>
+            <field name='name'>B-010-014</field>
+            <field name='posx'>1</field>
+            <field name='posy'>010</field>
+            <field name='posz'>014</field>
+            <!--<field ref='ubicacion_008' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>B-010-014</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_b_010"/>
+        </record>
+        <record id='location_27' model='stock.location'>
+            <field name='name'>B-011-010</field>
+            <field name='posx'>1</field>
+            <field name='posy'>011</field>
+            <field name='posz'>010</field>
+            <!--<field ref='ubicacion_004' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>B-011-010</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_b_011"/>
+        </record>
+        <record id='location_28' model='stock.location'>
+            <field name='name'>B-012-010</field>
+            <field name='posx'>1</field>
+            <field name='posy'>012</field>
+            <field name='posz'>010</field>
+            <!--<field ref='ubicacion_004' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>B-012-010</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_b_012"/>
+        </record>
+        <record id='location_29' model='stock.location'>
+            <field name='name'>B-001-020</field>
+            <field name='posx'>1</field>
+            <field name='posy'>001</field>
+            <field name='posz'>020</field>
+            <!--<field ref='ubicacion_001' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>B-001-020</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_b_001"/>
+        </record>
+        <record id='location_30' model='stock.location'>
+            <field name='name'>B-002-020</field>
+            <field name='posx'>1</field>
+            <field name='posy'>002</field>
+            <field name='posz'>020</field>
+            <!--<field ref='ubicacion_001' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>B-002-020</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_b_002"/>
+        </record>
+        <record id='location_31' model='stock.location'>
+            <field name='name'>B-003-020</field>
+            <field name='posx'>1</field>
+            <field name='posy'>003</field>
+            <field name='posz'>020</field>
+            <!--<field ref='ubicacion_001' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>B-003-020</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_b_003"/>
+        </record>
+        <record id='location_32' model='stock.location'>
+            <field name='name'>B-004-020</field>
+            <field name='posx'>1</field>
+            <field name='posy'>004</field>
+            <field name='posz'>020</field>
+            <!--<field ref='ubicacion_001' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>B-004-020</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_b_004"/>
+        </record>
+        <record id='location_33' model='stock.location'>
+            <field name='name'>B-005-020</field>
+            <field name='posx'>1</field>
+            <field name='posy'>005</field>
+            <field name='posz'>020</field>
+            <!--<field ref='ubicacion_001' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>B-005-020</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_b_005"/>
+        </record>
+        <record id='location_34' model='stock.location'>
+            <field name='name'>B-006-020</field>
+            <field name='posx'>1</field>
+            <field name='posy'>006</field>
+            <field name='posz'>020</field>
+            <!--<field ref='ubicacion_001' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>B-006-020</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_b_006"/>
+        </record>
+        <record id='location_35' model='stock.location'>
+            <field name='name'>B-007-020</field>
+            <field name='posx'>1</field>
+            <field name='posy'>007</field>
+            <field name='posz'>020</field>
+            <!--<field ref='ubicacion_001' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>B-007-020</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_b_007"/>
+        </record>
+        <record id='location_36' model='stock.location'>
+            <field name='name'>B-008-020</field>
+            <field name='posx'>1</field>
+            <field name='posy'>008</field>
+            <field name='posz'>020</field>
+            <!--<field ref='ubicacion_001' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>B-008-020</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_b_008"/>
+        </record>
+        <record id='location_37' model='stock.location'>
+            <field name='name'>B-009-020</field>
+            <field name='posx'>1</field>
+            <field name='posy'>009</field>
+            <field name='posz'>020</field>
+            <!--<field ref='ubicacion_001' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>B-009-020</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_b_009"/>
+        </record>
+        <record id='location_38' model='stock.location'>
+            <field name='name'>B-010-020</field>
+            <field name='posx'>1</field>
+            <field name='posy'>010</field>
+            <field name='posz'>020</field>
+            <!--<field ref='ubicacion_001' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>B-010-020</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_b_010"/>
+        </record>
+        <record id='location_39' model='stock.location'>
+            <field name='name'>B-011-020</field>
+            <field name='posx'>1</field>
+            <field name='posy'>011</field>
+            <field name='posz'>020</field>
+            <!--<field ref='ubicacion_001' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>B-011-020</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_b_011"/>
+        </record>
+        <record id='location_40' model='stock.location'>
+            <field name='name'>B-012-020</field>
+            <field name='posx'>1</field>
+            <field name='posy'>012</field>
+            <field name='posz'>020</field>
+            <!--<field ref='ubicacion_001' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>B-012-020</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_b_012"/>
+        </record>
+        <record id='location_41' model='stock.location'>
+            <field name='name'>B-001-030</field>
+            <field name='posx'>1</field>
+            <field name='posy'>001</field>
+            <field name='posz'>030</field>
+            <!--<field ref='ubicacion_001' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>B-001-030</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_b_001"/>
+        </record>
+        <record id='location_42' model='stock.location'>
+            <field name='name'>B-002-030</field>
+            <field name='posx'>1</field>
+            <field name='posy'>002</field>
+            <field name='posz'>030</field>
+            <!--<field ref='ubicacion_001' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>B-002-030</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_b_002"/>
+        </record>
+        <record id='location_43' model='stock.location'>
+            <field name='name'>B-003-030</field>
+            <field name='posx'>1</field>
+            <field name='posy'>003</field>
+            <field name='posz'>030</field>
+            <!--<field ref='ubicacion_001' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>B-003-030</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_b_003"/>
+        </record>
+        <record id='location_44' model='stock.location'>
+            <field name='name'>B-004-030</field>
+            <field name='posx'>1</field>
+            <field name='posy'>004</field>
+            <field name='posz'>030</field>
+            <!--<field ref='ubicacion_001' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>B-004-030</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_b_004"/>
+        </record>
+        <record id='location_45' model='stock.location'>
+            <field name='name'>B-005-030</field>
+            <field name='posx'>1</field>
+            <field name='posy'>005</field>
+            <field name='posz'>030</field>
+            <!--<field ref='ubicacion_001' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>B-005-030</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_b_005"/>
+        </record>
+        <record id='location_46' model='stock.location'>
+            <field name='name'>B-006-030</field>
+            <field name='posx'>1</field>
+            <field name='posy'>006</field>
+            <field name='posz'>030</field>
+            <!--<field ref='ubicacion_001' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>B-006-030</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_b_006"/>
+        </record>
+        <record id='location_47' model='stock.location'>
+            <field name='name'>B-007-030</field>
+            <field name='posx'>1</field>
+            <field name='posy'>007</field>
+            <field name='posz'>030</field>
+            <!--<field ref='ubicacion_001' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>B-007-030</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_b_007"/>
+        </record>
+        <record id='location_48' model='stock.location'>
+            <field name='name'>B-008-030</field>
+            <field name='posx'>1</field>
+            <field name='posy'>008</field>
+            <field name='posz'>030</field>
+            <!--<field ref='ubicacion_001' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>B-008-030</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_b_008"/>
+        </record>
+        <record id='location_49' model='stock.location'>
+            <field name='name'>B-009-030</field>
+            <field name='posx'>1</field>
+            <field name='posy'>009</field>
+            <field name='posz'>030</field>
+            <!--<field ref='ubicacion_001' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>B-009-030</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_b_009"/>
+        </record>
+        <record id='location_50' model='stock.location'>
+            <field name='name'>B-010-030</field>
+            <field name='posx'>1</field>
+            <field name='posy'>010</field>
+            <field name='posz'>030</field>
+            <!--<field ref='ubicacion_001' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>B-010-030</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_b_010"/>
+        </record>
+        <record id='location_51' model='stock.location'>
+            <field name='name'>B-011-030</field>
+            <field name='posx'>1</field>
+            <field name='posy'>011</field>
+            <field name='posz'>030</field>
+            <!--<field ref='ubicacion_001' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>B-011-030</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_b_011"/>
+        </record>
+        <record id='location_52' model='stock.location'>
+            <field name='name'>B-012-030</field>
+            <field name='posx'>1</field>
+            <field name='posy'>012</field>
+            <field name='posz'>030</field>
+            <!--<field ref='ubicacion_001' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>B-012-030</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_b_012"/>
+        </record>
+        <record id='location_53' model='stock.location'>
+            <field name='name'>B-001-040</field>
+            <field name='posx'>1</field>
+            <field name='posy'>001</field>
+            <field name='posz'>040</field>
+            <!--<field ref='ubicacion_001' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>B-001-040</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_b_001"/>
+        </record>
+        <record id='location_54' model='stock.location'>
+            <field name='name'>B-002-040</field>
+            <field name='posx'>1</field>
+            <field name='posy'>002</field>
+            <field name='posz'>040</field>
+            <!--<field ref='ubicacion_001' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>B-002-040</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_b_002"/>
+        </record>
+        <record id='location_55' model='stock.location'>
+            <field name='name'>B-003-040</field>
+            <field name='posx'>1</field>
+            <field name='posy'>003</field>
+            <field name='posz'>040</field>
+            <!--<field ref='ubicacion_001' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>B-003-040</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_b_003"/>
+        </record>
+        <record id='location_56' model='stock.location'>
+            <field name='name'>B-004-040</field>
+            <field name='posx'>1</field>
+            <field name='posy'>004</field>
+            <field name='posz'>040</field>
+            <!--<field ref='ubicacion_001' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>B-004-040</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_b_004"/>
+        </record>
+        <record id='location_57' model='stock.location'>
+            <field name='name'>B-005-040</field>
+            <field name='posx'>1</field>
+            <field name='posy'>005</field>
+            <field name='posz'>040</field>
+            <!--<field ref='ubicacion_001' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>B-005-040</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_b_005"/>
+        </record>
+        <record id='location_58' model='stock.location'>
+            <field name='name'>B-006-040</field>
+            <field name='posx'>1</field>
+            <field name='posy'>006</field>
+            <field name='posz'>040</field>
+            <!--<field ref='ubicacion_001' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>B-006-040</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_b_006"/>
+        </record>
+        <record id='location_59' model='stock.location'>
+            <field name='name'>B-007-040</field>
+            <field name='posx'>1</field>
+            <field name='posy'>007</field>
+            <field name='posz'>040</field>
+            <!--<field ref='ubicacion_001' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>B-007-040</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_b_007"/>
+        </record>
+        <record id='location_60' model='stock.location'>
+            <field name='name'>B-008-040</field>
+            <field name='posx'>1</field>
+            <field name='posy'>008</field>
+            <field name='posz'>040</field>
+            <!--<field ref='ubicacion_001' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>B-008-040</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_b_008"/>
+        </record>
+        <record id='location_61' model='stock.location'>
+            <field name='name'>B-009-040</field>
+            <field name='posx'>1</field>
+            <field name='posy'>009</field>
+            <field name='posz'>040</field>
+            <!--<field ref='ubicacion_001' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>B-009-040</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_b_009"/>
+        </record>
+        <record id='location_62' model='stock.location'>
+            <field name='name'>B-010-040</field>
+            <field name='posx'>1</field>
+            <field name='posy'>010</field>
+            <field name='posz'>040</field>
+            <!--<field ref='ubicacion_001' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>B-010-040</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_b_010"/>
+        </record>
+        <record id='location_63' model='stock.location'>
+            <field name='name'>B-011-040</field>
+            <field name='posx'>1</field>
+            <field name='posy'>011</field>
+            <field name='posz'>040</field>
+            <!--<field ref='ubicacion_001' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>B-011-040</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_b_011"/>
+        </record>
+        <record id='location_64' model='stock.location'>
+            <field name='name'>B-012-040</field>
+            <field name='posx'>1</field>
+            <field name='posy'>012</field>
+            <field name='posz'>040</field>
+            <!--<field ref='ubicacion_001' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>B-012-040</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_b_012"/>
+        </record>
+        <record id='location_65' model='stock.location'>
+            <field name='name'>B-001-050</field>
+            <field name='posx'>1</field>
+            <field name='posy'>001</field>
+            <field name='posz'>050</field>
+            <!--<field ref='ubicacion_001' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>B-001-050</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_b_001"/>
+        </record>
+        <record id='location_66' model='stock.location'>
+            <field name='name'>B-002-050</field>
+            <field name='posx'>1</field>
+            <field name='posy'>002</field>
+            <field name='posz'>050</field>
+            <!--<field ref='ubicacion_001' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>B-002-050</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_b_002"/>
+        </record>
+        <record id='location_67' model='stock.location'>
+            <field name='name'>B-003-050</field>
+            <field name='posx'>1</field>
+            <field name='posy'>003</field>
+            <field name='posz'>050</field>
+            <!--<field ref='ubicacion_001' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>B-003-050</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_b_003"/>
+        </record>
+        <record id='location_68' model='stock.location'>
+            <field name='name'>B-004-050</field>
+            <field name='posx'>1</field>
+            <field name='posy'>004</field>
+            <field name='posz'>050</field>
+            <!--<field ref='ubicacion_001' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>B-004-050</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_b_004"/>
+        </record>
+        <record id='location_69' model='stock.location'>
+            <field name='name'>B-005-050</field>
+            <field name='posx'>1</field>
+            <field name='posy'>005</field>
+            <field name='posz'>050</field>
+            <!--<field ref='ubicacion_001' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>B-005-050</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_b_005"/>
+        </record>
+        <record id='location_70' model='stock.location'>
+            <field name='name'>B-006-050</field>
+            <field name='posx'>1</field>
+            <field name='posy'>006</field>
+            <field name='posz'>050</field>
+            <!--<field ref='ubicacion_001' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>B-006-050</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_b_006"/>
+        </record>
+        <record id='location_71' model='stock.location'>
+            <field name='name'>B-007-050</field>
+            <field name='posx'>1</field>
+            <field name='posy'>007</field>
+            <field name='posz'>050</field>
+            <!--<field ref='ubicacion_001' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>B-007-050</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_b_007"/>
+        </record>
+        <record id='location_72' model='stock.location'>
+            <field name='name'>B-008-050</field>
+            <field name='posx'>1</field>
+            <field name='posy'>008</field>
+            <field name='posz'>050</field>
+            <!--<field ref='ubicacion_001' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>B-008-050</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_b_008"/>
+        </record>
+        <record id='location_73' model='stock.location'>
+            <field name='name'>B-009-050</field>
+            <field name='posx'>1</field>
+            <field name='posy'>009</field>
+            <field name='posz'>050</field>
+            <!--<field ref='ubicacion_001' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>B-009-050</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_b_009"/>
+        </record>
+        <record id='location_74' model='stock.location'>
+            <field name='name'>B-010-050</field>
+            <field name='posx'>1</field>
+            <field name='posy'>010</field>
+            <field name='posz'>050</field>
+            <!--<field ref='ubicacion_001' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>B-010-050</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_b_010"/>
+        </record>
+        <record id='location_75' model='stock.location'>
+            <field name='name'>B-011-050</field>
+            <field name='posx'>1</field>
+            <field name='posy'>011</field>
+            <field name='posz'>050</field>
+            <!--<field ref='ubicacion_001' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>B-011-050</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_b_011"/>
+        </record>
+        <record id='location_76' model='stock.location'>
+            <field name='name'>B-012-050</field>
+            <field name='posx'>1</field>
+            <field name='posy'>012</field>
+            <field name='posz'>050</field>
+            <!--<field ref='ubicacion_001' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>B-012-050</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_b_012"/>
+        </record>
+        <record id='location_77' model='stock.location'>
+            <field name='name'>C-001-011</field>
+            <field name='posx'>2</field>
+            <field name='posy'>001</field>
+            <field name='posz'>011</field>
+            <!--<field ref='ubicacion_011' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>C-001-011</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_c_001"/>
+        </record>
+        <record id='location_78' model='stock.location'>
+            <field name='name'>C-002-011</field>
+            <field name='posx'>2</field>
+            <field name='posy'>002</field>
+            <field name='posz'>011</field>
+            <!--<field ref='ubicacion_011' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>C-002-011</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_c_002"/>
+        </record>
+        <record id='location_79' model='stock.location'>
+            <field name='name'>C-003-011</field>
+            <field name='posx'>2</field>
+            <field name='posy'>003</field>
+            <field name='posz'>011</field>
+            <!--<field ref='ubicacion_011' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>C-003-011</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_c_003"/>
+        </record>
+        <record id='location_80' model='stock.location'>
+            <field name='name'>C-004-011</field>
+            <field name='posx'>2</field>
+            <field name='posy'>004</field>
+            <field name='posz'>011</field>
+            <!--<field ref='ubicacion_011' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>C-004-011</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_c_004"/>
+        </record>
+        <record id='location_81' model='stock.location'>
+            <field name='name'>C-005-011</field>
+            <field name='posx'>2</field>
+            <field name='posy'>005</field>
+            <field name='posz'>011</field>
+            <!--<field ref='ubicacion_011' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>C-005-011</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_c_005"/>
+        </record>
+        <record id='location_82' model='stock.location'>
+            <field name='name'>C-006-011</field>
+            <field name='posx'>2</field>
+            <field name='posy'>006</field>
+            <field name='posz'>011</field>
+            <!--<field ref='ubicacion_011' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>C-006-011</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_c_006"/>
+        </record>
+        <record id='location_83' model='stock.location'>
+            <field name='name'>C-001-013</field>
+            <field name='posx'>2</field>
+            <field name='posy'>001</field>
+            <field name='posz'>013</field>
+            <!--<field ref='ubicacion_012' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>C-001-013</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_c_001"/>
+        </record>
+        <record id='location_84' model='stock.location'>
+            <field name='name'>C-002-013</field>
+            <field name='posx'>2</field>
+            <field name='posy'>002</field>
+            <field name='posz'>013</field>
+            <!--<field ref='ubicacion_012' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>C-002-013</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_c_002"/>
+        </record>
+        <record id='location_85' model='stock.location'>
+            <field name='name'>C-003-013</field>
+            <field name='posx'>2</field>
+            <field name='posy'>003</field>
+            <field name='posz'>013</field>
+            <!--<field ref='ubicacion_012' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>C-003-013</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_c_003"/>
+        </record>
+        <record id='location_86' model='stock.location'>
+            <field name='name'>C-004-013</field>
+            <field name='posx'>2</field>
+            <field name='posy'>004</field>
+            <field name='posz'>013</field>
+            <!--<field ref='ubicacion_012' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>C-004-013</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_c_004"/>
+        </record>
+        <record id='location_87' model='stock.location'>
+            <field name='name'>C-005-013</field>
+            <field name='posx'>2</field>
+            <field name='posy'>005</field>
+            <field name='posz'>013</field>
+            <!--<field ref='ubicacion_012' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>C-005-013</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_c_005"/>
+        </record>
+        <record id='location_88' model='stock.location'>
+            <field name='name'>C-006-013</field>
+            <field name='posx'>2</field>
+            <field name='posy'>006</field>
+            <field name='posz'>013</field>
+            <!--<field ref='ubicacion_012' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>C-006-013</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_c_006"/>
+        </record>
+        <record id='location_89' model='stock.location'>
+            <field name='name'>C-001-015</field>
+            <field name='posx'>2</field>
+            <field name='posy'>001</field>
+            <field name='posz'>015</field>
+            <!--<field ref='ubicacion_012' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>C-001-015</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_c_001"/>
+        </record>
+        <record id='location_90' model='stock.location'>
+            <field name='name'>C-002-015</field>
+            <field name='posx'>2</field>
+            <field name='posy'>002</field>
+            <field name='posz'>015</field>
+            <!--<field ref='ubicacion_012' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>C-002-015</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_c_002"/>
+        </record>
+        <record id='location_91' model='stock.location'>
+            <field name='name'>C-003-015</field>
+            <field name='posx'>2</field>
+            <field name='posy'>003</field>
+            <field name='posz'>015</field>
+            <!--<field ref='ubicacion_012' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>C-003-015</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_c_003"/>
+        </record>
+        <record id='location_92' model='stock.location'>
+            <field name='name'>C-004-015</field>
+            <field name='posx'>2</field>
+            <field name='posy'>004</field>
+            <field name='posz'>015</field>
+            <!--<field ref='ubicacion_012' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>C-004-015</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_c_004"/>
+        </record>
+        <record id='location_93' model='stock.location'>
+            <field name='name'>C-005-015</field>
+            <field name='posx'>2</field>
+            <field name='posy'>005</field>
+            <field name='posz'>015</field>
+            <!--<field ref='ubicacion_012' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>C-005-015</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_c_005"/>
+        </record>
+        <record id='location_94' model='stock.location'>
+            <field name='name'>C-006-015</field>
+            <field name='posx'>2</field>
+            <field name='posy'>006</field>
+            <field name='posz'>015</field>
+            <!--<field ref='ubicacion_012' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>C-006-015</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_c_006"/>
+        </record>
+        <record id='location_95' model='stock.location'>
+            <field name='name'>C-001-017</field>
+            <field name='posx'>2</field>
+            <field name='posy'>001</field>
+            <field name='posz'>017</field>
+            <!--<field ref='ubicacion_012' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>C-001-017</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_c_001"/>
+        </record>
+        <record id='location_96' model='stock.location'>
+            <field name='name'>C-002-017</field>
+            <field name='posx'>2</field>
+            <field name='posy'>002</field>
+            <field name='posz'>017</field>
+            <!--<field ref='ubicacion_012' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>C-002-017</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_c_002"/>
+        </record>
+        <record id='location_97' model='stock.location'>
+            <field name='name'>C-003-017</field>
+            <field name='posx'>2</field>
+            <field name='posy'>003</field>
+            <field name='posz'>017</field>
+            <!--<field ref='ubicacion_012' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>C-003-017</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_c_003"/>
+        </record>
+        <record id='location_98' model='stock.location'>
+            <field name='name'>C-004-017</field>
+            <field name='posx'>2</field>
+            <field name='posy'>004</field>
+            <field name='posz'>017</field>
+            <!--<field ref='ubicacion_012' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>C-004-017</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_c_004"/>
+        </record>
+        <record id='location_99' model='stock.location'>
+            <field name='name'>C-005-017</field>
+            <field name='posx'>2</field>
+            <field name='posy'>005</field>
+            <field name='posz'>017</field>
+            <!--<field ref='ubicacion_012' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>C-005-017</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_c_005"/>
+        </record>
+        <record id='location_100' model='stock.location'>
+            <field name='name'>C-006-017</field>
+            <field name='posx'>2</field>
+            <field name='posy'>006</field>
+            <field name='posz'>017</field>
+            <!--<field ref='ubicacion_012' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>C-006-017</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_c_006"/>
+        </record>
+        <record id='location_101' model='stock.location'>
+            <field name='name'>C-001-020</field>
+            <field name='posx'>2</field>
+            <field name='posy'>001</field>
+            <field name='posz'>020</field>
+            <!--<field ref='ubicacion_001' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>C-001-020</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_c_001"/>
+        </record>
+        <record id='location_102' model='stock.location'>
+            <field name='name'>C-002-020</field>
+            <field name='posx'>2</field>
+            <field name='posy'>002</field>
+            <field name='posz'>020</field>
+            <!--<field ref='ubicacion_001' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>C-002-020</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_c_002"/>
+        </record>
+        <record id='location_103' model='stock.location'>
+            <field name='name'>C-003-020</field>
+            <field name='posx'>2</field>
+            <field name='posy'>003</field>
+            <field name='posz'>020</field>
+            <!--<field ref='ubicacion_001' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>C-003-020</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_c_003"/>
+        </record>
+        <record id='location_104' model='stock.location'>
+            <field name='name'>C-004-020</field>
+            <field name='posx'>2</field>
+            <field name='posy'>004</field>
+            <field name='posz'>020</field>
+            <!--<field ref='ubicacion_001' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>C-004-020</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_c_004"/>
+        </record>
+        <record id='location_105' model='stock.location'>
+            <field name='name'>C-005-020</field>
+            <field name='posx'>2</field>
+            <field name='posy'>005</field>
+            <field name='posz'>020</field>
+            <!--<field ref='ubicacion_001' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>C-005-020</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_c_005"/>
+        </record>
+        <record id='location_106' model='stock.location'>
+            <field name='name'>C-006-020</field>
+            <field name='posx'>2</field>
+            <field name='posy'>006</field>
+            <field name='posz'>020</field>
+            <!--<field ref='ubicacion_001' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>C-006-020</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_c_006"/>
+        </record>
+        <record id='location_107' model='stock.location'>
+            <field name='name'>C-007-020</field>
+            <field name='posx'>2</field>
+            <field name='posy'>007</field>
+            <field name='posz'>020</field>
+            <!--<field ref='ubicacion_001' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>C-007-020</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_c_007"/>
+        </record>
+        <record id='location_108' model='stock.location'>
+            <field name='name'>C-008-020</field>
+            <field name='posx'>2</field>
+            <field name='posy'>008</field>
+            <field name='posz'>020</field>
+            <!--<field ref='ubicacion_001' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>C-008-020</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_c_008"/>
+        </record>
+        <record id='location_109' model='stock.location'>
+            <field name='name'>C-009-020</field>
+            <field name='posx'>2</field>
+            <field name='posy'>009</field>
+            <field name='posz'>020</field>
+            <!--<field ref='ubicacion_001' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>C-009-020</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_c_009"/>
+        </record>
+        <record id='location_110' model='stock.location'>
+            <field name='name'>C-010-020</field>
+            <field name='posx'>2</field>
+            <field name='posy'>010</field>
+            <field name='posz'>020</field>
+            <!--<field ref='ubicacion_001' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>C-010-020</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_c_010"/>
+        </record>
+        <record id='location_111' model='stock.location'>
+            <field name='name'>C-011-020</field>
+            <field name='posx'>2</field>
+            <field name='posy'>011</field>
+            <field name='posz'>020</field>
+            <!--<field ref='ubicacion_001' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>C-011-020</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_c_011"/>
+        </record>
+        <record id='location_112' model='stock.location'>
+            <field name='name'>C-012-020</field>
+            <field name='posx'>2</field>
+            <field name='posy'>012</field>
+            <field name='posz'>020</field>
+            <!--<field ref='ubicacion_001' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>C-012-020</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_c_012"/>
+        </record>
+        <record id='location_113' model='stock.location'>
+            <field name='name'>C-001-030</field>
+            <field name='posx'>2</field>
+            <field name='posy'>001</field>
+            <field name='posz'>030</field>
+            <!--<field ref='ubicacion_001' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>C-001-030</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_c_001"/>
+        </record>
+        <record id='location_114' model='stock.location'>
+            <field name='name'>C-002-030</field>
+            <field name='posx'>2</field>
+            <field name='posy'>002</field>
+            <field name='posz'>030</field>
+            <!--<field ref='ubicacion_001' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>C-002-030</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_c_002"/>
+        </record>
+        <record id='location_115' model='stock.location'>
+            <field name='name'>C-003-030</field>
+            <field name='posx'>2</field>
+            <field name='posy'>003</field>
+            <field name='posz'>030</field>
+            <!--<field ref='ubicacion_001' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>C-003-030</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_c_003"/>
+        </record>
+        <record id='location_116' model='stock.location'>
+            <field name='name'>C-004-030</field>
+            <field name='posx'>2</field>
+            <field name='posy'>004</field>
+            <field name='posz'>030</field>
+            <!--<field ref='ubicacion_001' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>C-004-030</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_c_004"/>
+        </record>
+        <record id='location_117' model='stock.location'>
+            <field name='name'>C-005-030</field>
+            <field name='posx'>2</field>
+            <field name='posy'>005</field>
+            <field name='posz'>030</field>
+            <!--<field ref='ubicacion_001' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>C-005-030</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_c_005"/>
+        </record>
+        <record id='location_118' model='stock.location'>
+            <field name='name'>C-006-030</field>
+            <field name='posx'>2</field>
+            <field name='posy'>006</field>
+            <field name='posz'>030</field>
+            <!--<field ref='ubicacion_001' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>C-006-030</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_c_006"/>
+        </record>
+        <record id='location_119' model='stock.location'>
+            <field name='name'>C-007-030</field>
+            <field name='posx'>2</field>
+            <field name='posy'>007</field>
+            <field name='posz'>030</field>
+            <!--<field ref='ubicacion_001' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>C-007-030</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_c_007"/>
+        </record>
+        <record id='location_120' model='stock.location'>
+            <field name='name'>C-008-030</field>
+            <field name='posx'>2</field>
+            <field name='posy'>008</field>
+            <field name='posz'>030</field>
+            <!--<field ref='ubicacion_001' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>C-008-030</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_c_008"/>
+        </record>
+        <record id='location_121' model='stock.location'>
+            <field name='name'>C-009-030</field>
+            <field name='posx'>2</field>
+            <field name='posy'>009</field>
+            <field name='posz'>030</field>
+            <!--<field ref='ubicacion_001' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>C-009-030</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_c_009"/>
+        </record>
+        <record id='location_122' model='stock.location'>
+            <field name='name'>C-010-030</field>
+            <field name='posx'>2</field>
+            <field name='posy'>010</field>
+            <field name='posz'>030</field>
+            <!--<field ref='ubicacion_001' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>C-010-030</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_c_010"/>
+        </record>
+        <record id='location_123' model='stock.location'>
+            <field name='name'>C-011-030</field>
+            <field name='posx'>2</field>
+            <field name='posy'>011</field>
+            <field name='posz'>030</field>
+            <!--<field ref='ubicacion_001' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>C-011-030</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_c_011"/>
+        </record>
+        <record id='location_124' model='stock.location'>
+            <field name='name'>C-012-030</field>
+            <field name='posx'>2</field>
+            <field name='posy'>012</field>
+            <field name='posz'>030</field>
+            <!--<field ref='ubicacion_001' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>C-012-030</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_c_012"/>
+        </record>
+        <record id='location_125' model='stock.location'>
+            <field name='name'>C-001-040</field>
+            <field name='posx'>2</field>
+            <field name='posy'>001</field>
+            <field name='posz'>040</field>
+            <!--<field ref='ubicacion_001' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>C-001-040</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_c_001"/>
+        </record>
+        <record id='location_126' model='stock.location'>
+            <field name='name'>C-002-040</field>
+            <field name='posx'>2</field>
+            <field name='posy'>002</field>
+            <field name='posz'>040</field>
+            <!--<field ref='ubicacion_001' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>C-002-040</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_c_002"/>
+        </record>
+        <record id='location_127' model='stock.location'>
+            <field name='name'>C-003-040</field>
+            <field name='posx'>2</field>
+            <field name='posy'>003</field>
+            <field name='posz'>040</field>
+            <!--<field ref='ubicacion_001' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>C-003-040</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_c_003"/>
+        </record>
+        <record id='location_128' model='stock.location'>
+            <field name='name'>C-004-040</field>
+            <field name='posx'>2</field>
+            <field name='posy'>004</field>
+            <field name='posz'>040</field>
+            <!--<field ref='ubicacion_001' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>C-004-040</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_c_004"/>
+        </record>
+        <record id='location_129' model='stock.location'>
+            <field name='name'>C-005-040</field>
+            <field name='posx'>2</field>
+            <field name='posy'>005</field>
+            <field name='posz'>040</field>
+            <!--<field ref='ubicacion_001' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>C-005-040</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_c_005"/>
+        </record>
+        <record id='location_130' model='stock.location'>
+            <field name='name'>C-006-040</field>
+            <field name='posx'>2</field>
+            <field name='posy'>006</field>
+            <field name='posz'>040</field>
+            <!--<field ref='ubicacion_001' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>C-006-040</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_c_006"/>
+        </record>
+        <record id='location_131' model='stock.location'>
+            <field name='name'>C-007-040</field>
+            <field name='posx'>2</field>
+            <field name='posy'>007</field>
+            <field name='posz'>040</field>
+            <!--<field ref='ubicacion_001' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>C-007-040</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_c_007"/>
+        </record>
+        <record id='location_132' model='stock.location'>
+            <field name='name'>C-008-040</field>
+            <field name='posx'>2</field>
+            <field name='posy'>008</field>
+            <field name='posz'>040</field>
+            <!--<field ref='ubicacion_001' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>C-008-040</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_c_008"/>
+        </record>
+        <record id='location_133' model='stock.location'>
+            <field name='name'>C-009-040</field>
+            <field name='posx'>2</field>
+            <field name='posy'>009</field>
+            <field name='posz'>040</field>
+            <!--<field ref='ubicacion_001' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>C-009-040</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_c_009"/>
+        </record>
+        <record id='location_134' model='stock.location'>
+            <field name='name'>C-010-040</field>
+            <field name='posx'>2</field>
+            <field name='posy'>010</field>
+            <field name='posz'>040</field>
+            <!--<field ref='ubicacion_001' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>C-010-040</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_c_010"/>
+        </record>
+        <record id='location_135' model='stock.location'>
+            <field name='name'>C-011-040</field>
+            <field name='posx'>2</field>
+            <field name='posy'>011</field>
+            <field name='posz'>040</field>
+            <!--<field ref='ubicacion_001' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>C-011-040</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_c_011"/>
+        </record>
+        <record id='location_136' model='stock.location'>
+            <field name='name'>C-012-040</field>
+            <field name='posx'>2</field>
+            <field name='posy'>012</field>
+            <field name='posz'>040</field>
+            <!--<field ref='ubicacion_001' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>C-012-040</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_c_012"/>
+        </record>
+        <record id='location_137' model='stock.location'>
+            <field name='name'>C-001-050</field>
+            <field name='posx'>2</field>
+            <field name='posy'>001</field>
+            <field name='posz'>050</field>
+            <!--<field ref='ubicacion_001' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>C-001-050</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_c_001"/>
+        </record>
+        <record id='location_138' model='stock.location'>
+            <field name='name'>C-002-050</field>
+            <field name='posx'>2</field>
+            <field name='posy'>002</field>
+            <field name='posz'>050</field>
+            <!--<field ref='ubicacion_001' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>C-002-050</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_c_002"/>
+        </record>
+        <record id='location_139' model='stock.location'>
+            <field name='name'>C-003-050</field>
+            <field name='posx'>2</field>
+            <field name='posy'>003</field>
+            <field name='posz'>050</field>
+            <!--<field ref='ubicacion_001' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>C-003-050</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_c_003"/>
+        </record>
+        <record id='location_140' model='stock.location'>
+            <field name='name'>C-004-050</field>
+            <field name='posx'>2</field>
+            <field name='posy'>004</field>
+            <field name='posz'>050</field>
+            <!--<field ref='ubicacion_001' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>C-004-050</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_c_004"/>
+        </record>
+        <record id='location_141' model='stock.location'>
+            <field name='name'>C-005-050</field>
+            <field name='posx'>2</field>
+            <field name='posy'>005</field>
+            <field name='posz'>050</field>
+            <!--<field ref='ubicacion_001' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>C-005-050</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_c_005"/>
+        </record>
+        <record id='location_142' model='stock.location'>
+            <field name='name'>C-006-050</field>
+            <field name='posx'>2</field>
+            <field name='posy'>006</field>
+            <field name='posz'>050</field>
+            <!--<field ref='ubicacion_001' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>C-006-050</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_c_006"/>
+        </record>
+        <record id='location_143' model='stock.location'>
+            <field name='name'>C-007-050</field>
+            <field name='posx'>2</field>
+            <field name='posy'>007</field>
+            <field name='posz'>050</field>
+            <!--<field ref='ubicacion_001' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>C-007-050</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_c_007"/>
+        </record>
+        <record id='location_144' model='stock.location'>
+            <field name='name'>C-008-050</field>
+            <field name='posx'>2</field>
+            <field name='posy'>008</field>
+            <field name='posz'>050</field>
+            <!--<field ref='ubicacion_001' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>C-008-050</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_c_008"/>
+        </record>
+        <record id='location_145' model='stock.location'>
+            <field name='name'>C-009-050</field>
+            <field name='posx'>2</field>
+            <field name='posy'>009</field>
+            <field name='posz'>050</field>
+            <!--<field ref='ubicacion_001' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>C-009-050</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_c_009"/>
+        </record>
+        <record id='location_146' model='stock.location'>
+            <field name='name'>C-010-050</field>
+            <field name='posx'>2</field>
+            <field name='posy'>010</field>
+            <field name='posz'>050</field>
+            <!--<field ref='ubicacion_001' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>C-010-050</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_c_010"/>
+        </record>
+        <record id='location_147' model='stock.location'>
+            <field name='name'>C-011-050</field>
+            <field name='posx'>2</field>
+            <field name='posy'>011</field>
+            <field name='posz'>050</field>
+            <!--<field ref='ubicacion_001' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>C-011-050</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_c_011"/>
+        </record>
+        <record id='location_148' model='stock.location'>
+            <field name='name'>C-012-050</field>
+            <field name='posx'>2</field>
+            <field name='posy'>012</field>
+            <field name='posz'>050</field>
+            <!--<field ref='ubicacion_001' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>C-012-050</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_c_012"/>
+        </record>
+        <record id='location_b_3_11' model='stock.location'>
+            <field name='name'>B-003-011</field>
+            <field name='posx'>1</field>
+            <field name='posy'>003</field>
+            <field name='posz'>011</field>
+            <!--<field ref='ubicacion_004' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>B-003-011</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_b_003"/>
+        </record>
+        <record id='location_b_4_11' model='stock.location'>
+            <field name='name'>B-004-011</field>
+            <field name='posx'>1</field>
+            <field name='posy'>004</field>
+            <field name='posz'>011</field>
+            <!--<field ref='ubicacion_004' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>B-004-011</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_b_004"/>
+        </record>
+        <record id='location_b_5_11' model='stock.location'>
+            <field name='name'>B-005-011</field>
+            <field name='posx'>1</field>
+            <field name='posy'>005</field>
+            <field name='posz'>011</field>
+            <!--<field ref='ubicacion_004' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>B-005-011</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_b_005"/>
+        </record>
+        <record id='location_b_6_11' model='stock.location'>
+            <field name='name'>B-006-011</field>
+            <field name='posx'>1</field>
+            <field name='posy'>006</field>
+            <field name='posz'>011</field>
+            <!--<field ref='ubicacion_004' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>B-006-011</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_b_006"/>
+        </record>
+        <record id='location_b_7_11' model='stock.location'>
+            <field name='name'>B-007-011</field>
+            <field name='posx'>1</field>
+            <field name='posy'>007</field>
+            <field name='posz'>011</field>
+            <!--<field ref='ubicacion_004' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>B-007-011</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_b_007"/>
+        </record>
+        <record id='location_b_8_11' model='stock.location'>
+            <field name='name'>B-008-011</field>
+            <field name='posx'>1</field>
+            <field name='posy'>008</field>
+            <field name='posz'>011</field>
+            <!--<field ref='ubicacion_004' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>B-008-011</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_b_008"/>
+        </record>
+        <record id='location_b_7_12' model='stock.location'>
+            <field name='name'>B-007-012</field>
+            <field name='posx'>1</field>
+            <field name='posy'>007</field>
+            <field name='posz'>012</field>
+            <!--<field ref='ubicacion_004' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>B-007-012</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_b_007"/>
+        </record>
+        <record id='location_b_8_12' model='stock.location'>
+            <field name='name'>B-008-012</field>
+            <field name='posx'>1</field>
+            <field name='posy'>008</field>
+            <field name='posz'>012</field>
+            <!--<field ref='ubicacion_004' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>B-008-012</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_b_008"/>
+        </record>
+        <record id='location_b_11_11' model='stock.location'>
+            <field name='name'>B-011-011</field>
+            <field name='posx'>1</field>
+            <field name='posy'>011</field>
+            <field name='posz'>011</field>
+            <!--<field ref='ubicacion_004' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>B-011-011</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_b_011"/>
+        </record>
+        <record id='location_b_11_12' model='stock.location'>
+            <field name='name'>B-011-012</field>
+            <field name='posx'>1</field>
+            <field name='posy'>011</field>
+            <field name='posz'>012</field>
+            <!--<field ref='ubicacion_004' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>B-011-012</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_b_011"/>
+        </record>
+        <record id='location_b_12_11' model='stock.location'>
+            <field name='name'>B-012-011</field>
+            <field name='posx'>1</field>
+            <field name='posy'>012</field>
+            <field name='posz'>011</field>
+            <!--<field ref='ubicacion_004' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>B-012-011</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_b_012"/>
+        </record>
+        <record id='location_b_12_12' model='stock.location'>
+            <field name='name'>B-012-012</field>
+            <field name='posx'>1</field>
+            <field name='posy'>012</field>
+            <field name='posz'>012</field>
+            <!--<field ref='ubicacion_004' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>B-012-012</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_b_012"/>
+        </record>
+        <record id='location_b_21_10' model='stock.location'>
+            <field name='name'>B-021-010</field>
+            <field name='posx'>1</field>
+            <field name='posy'>021</field>
+            <field name='posz'>010</field>
+            <!--<field ref='ubicacion_004' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>B-021-010</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_b_021"/>
+        </record>
+        <record id='location_b_22_10' model='stock.location'>
+            <field name='name'>B-022-010</field>
+            <field name='posx'>1</field>
+            <field name='posy'>022</field>
+            <field name='posz'>010</field>
+            <!--<field ref='ubicacion_004' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>B-022-010</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_b_022"/>
+        </record>
+
+        <record id='location_c_01_010' model='stock.location'>
+            <field name='name'>C-001-010</field>
+            <field name='posx'>2</field>
+            <field name='posy'>001</field>
+            <field name='posz'>010</field>
+            <!--<field ref='ubicacion_011' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>C-001-010</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_c_001"/>
+        </record>
+        <record id='location_c_01_012' model='stock.location'>
+            <field name='name'>C-001-012</field>
+            <field name='posx'>2</field>
+            <field name='posy'>001</field>
+            <field name='posz'>012</field>
+            <!--<field ref='ubicacion_011' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>C-001-012</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_c_001"/>
+        </record>
+
+        <record id='location_c_02_010' model='stock.location'>
+            <field name='name'>C-002-010</field>
+            <field name='posx'>2</field>
+            <field name='posy'>002</field>
+            <field name='posz'>010</field>
+            <!--<field ref='ubicacion_011' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>C-002-010</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_c_002"/>
+        </record>
+        <record id='location_c_02_012' model='stock.location'>
+            <field name='name'>C-002-012</field>
+            <field name='posx'>2</field>
+            <field name='posy'>002</field>
+            <field name='posz'>012</field>
+            <!--<field ref='ubicacion_011' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>C-002-012</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_c_002"/>
+        </record>
+        <record id='location_c_03_010' model='stock.location'>
+            <field name='name'>C-003-010</field>
+            <field name='posx'>2</field>
+            <field name='posy'>003</field>
+            <field name='posz'>010</field>
+            <!--<field ref='ubicacion_011' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>C-003-010</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_c_003"/>
+        </record>
+        <record id='location_c_03_012' model='stock.location'>
+            <field name='name'>C-003-012</field>
+            <field name='posx'>2</field>
+            <field name='posy'>003</field>
+            <field name='posz'>012</field>
+            <!--<field ref='ubicacion_011' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>C-003-012</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_c_003"/>
+        </record>
+        <record id='location_c_04_010' model='stock.location'>
+            <field name='name'>C-004-010</field>
+            <field name='posx'>2</field>
+            <field name='posy'>004</field>
+            <field name='posz'>010</field>
+            <!--<field ref='ubicacion_011' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>C-004-010</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_c_004"/>
+        </record>
+        <record id='location_c_04_012' model='stock.location'>
+            <field name='name'>C-004-012</field>
+            <field name='posx'>2</field>
+            <field name='posy'>004</field>
+            <field name='posz'>012</field>
+            <!--<field ref='ubicacion_011' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>C-004-012</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_c_004"/>
+        </record>
+        <record id='location_c_05_010' model='stock.location'>
+            <field name='name'>C-005-010</field>
+            <field name='posx'>2</field>
+            <field name='posy'>005</field>
+            <field name='posz'>010</field>
+            <!--<field ref='ubicacion_011' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>C-005-010</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_c_005"/>
+        </record>
+        <record id='location_c_05_012' model='stock.location'>
+            <field name='name'>C-005-012</field>
+            <field name='posx'>2</field>
+            <field name='posy'>005</field>
+            <field name='posz'>012</field>
+            <!--<field ref='ubicacion_011' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>C-005-012</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_c_005"/>
+        </record>
+        <record id='location_c_06_010' model='stock.location'>
+            <field name='name'>C-006-010</field>
+            <field name='posx'>2</field>
+            <field name='posy'>006</field>
+            <field name='posz'>010</field>
+            <!--<field ref='ubicacion_011' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>C-006-010</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_c_006"/>
+        </record>
+        <record id='location_c_06_012' model='stock.location'>
+            <field name='name'>C-006-012</field>
+            <field name='posx'>2</field>
+            <field name='posy'>006</field>
+            <field name='posz'>012</field>
+            <!--<field ref='ubicacion_011' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>C-006-012</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_c_006"/>
+        </record>
+        <record id='location_c_07_010' model='stock.location'>
+            <field name='name'>C-007-010</field>
+            <field name='posx'>2</field>
+            <field name='posy'>007</field>
+            <field name='posz'>010</field>
+            <!--<field ref='ubicacion_011' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>C-007-010</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_c_007"/>
+        </record>
+        <record id='location_c_07_011' model='stock.location'>
+            <field name='name'>C-007-011</field>
+            <field name='posx'>2</field>
+            <field name='posy'>007</field>
+            <field name='posz'>011</field>
+            <!--<field ref='ubicacion_011' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>C-007-011</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_c_007"/>
+        </record>
+        <record id='location_c_07_012' model='stock.location'>
+            <field name='name'>C-007-012</field>
+            <field name='posx'>2</field>
+            <field name='posy'>007</field>
+            <field name='posz'>012</field>
+            <!--<field ref='ubicacion_011' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>C-007-012</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_c_007"/>
+        </record>
+
+
+        <record id='location_c_08_010' model='stock.location'>
+            <field name='name'>C-008-010</field>
+            <field name='posx'>2</field>
+            <field name='posy'>008</field>
+            <field name='posz'>010</field>
+            <!--<field ref='ubicacion_011' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>C-008-010</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_c_008"/>
+        </record>
+        <record id='location_c_08_011' model='stock.location'>
+            <field name='name'>C-008-011</field>
+            <field name='posx'>2</field>
+            <field name='posy'>008</field>
+            <field name='posz'>011</field>
+            <!--<field ref='ubicacion_011' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>C-008-011</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_c_008"/>
+        </record>
+        <record id='location_c_08_012' model='stock.location'>
+            <field name='name'>C-008-012</field>
+            <field name='posx'>2</field>
+            <field name='posy'>008</field>
+            <field name='posz'>012</field>
+            <!--<field ref='ubicacion_011' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>C-008-012</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_c_008"/>
+        </record>
+        <record id='location_c_09_010' model='stock.location'>
+            <field name='name'>C-009-010</field>
+            <field name='posx'>2</field>
+            <field name='posy'>009</field>
+            <field name='posz'>010</field>
+            <!--<field ref='ubicacion_011' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>C-009-010</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_c_009"/>
+        </record>
+        <record id='location_c_09_011' model='stock.location'>
+            <field name='name'>C-009-011</field>
+            <field name='posx'>2</field>
+            <field name='posy'>009</field>
+            <field name='posz'>011</field>
+            <!--<field ref='ubicacion_011' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>C-009-011</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_c_009"/>
+        </record>
+        <record id='location_c_09_012' model='stock.location'>
+            <field name='name'>C-009-012</field>
+            <field name='posx'>2</field>
+            <field name='posy'>009</field>
+            <field name='posz'>012</field>
+            <!--<field ref='ubicacion_011' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>C-009-012</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_c_009"/>
+        </record>
+        <record id='location_c_10_010' model='stock.location'>
+            <field name='name'>C-010-010</field>
+            <field name='posx'>2</field>
+            <field name='posy'>010</field>
+            <field name='posz'>010</field>
+            <!--<field ref='ubicacion_011' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>C-010-010</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_c_010"/>
+        </record>
+        <record id='location_c_10_011' model='stock.location'>
+            <field name='name'>C-010-011</field>
+            <field name='posx'>2</field>
+            <field name='posy'>010</field>
+            <field name='posz'>011</field>
+            <!--<field ref='ubicacion_011' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>C-010-011</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_c_010"/>
+        </record>
+        <record id='location_c_10_012' model='stock.location'>
+            <field name='name'>C-010-012</field>
+            <field name='posx'>2</field>
+            <field name='posy'>010</field>
+            <field name='posz'>012</field>
+            <!--<field ref='ubicacion_011' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>C-010-012</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_c_010"/>
+        </record>
+        <record id='location_c_11_010' model='stock.location'>
+            <field name='name'>C-011-010</field>
+            <field name='posx'>2</field>
+            <field name='posy'>011</field>
+            <field name='posz'>010</field>
+            <!--<field ref='ubicacion_011' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>C-011-010</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_c_011"/>
+        </record>
+        <record id='location_c_11_011' model='stock.location'>
+            <field name='name'>C-011-011</field>
+            <field name='posx'>2</field>
+            <field name='posy'>011</field>
+            <field name='posz'>011</field>
+            <!--<field ref='ubicacion_011' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>C-011-011</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_c_011"/>
+        </record>
+        <record id='location_c_11_012' model='stock.location'>
+            <field name='name'>C-011-012</field>
+            <field name='posx'>2</field>
+            <field name='posy'>011</field>
+            <field name='posz'>012</field>
+            <!--<field ref='ubicacion_011' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>C-011-012</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_c_011"/>
+        </record>
+        <record id='location_c_12_010' model='stock.location'>
+            <field name='name'>C-012-010</field>
+            <field name='posx'>2</field>
+            <field name='posy'>012</field>
+            <field name='posz'>010</field>
+            <!--<field ref='ubicacion_011' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>C-012-010</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_c_012"/>
+        </record>
+        <record id='location_c_12_011' model='stock.location'>
+            <field name='name'>C-012-011</field>
+            <field name='posx'>2</field>
+            <field name='posy'>012</field>
+            <field name='posz'>011</field>
+            <!--<field ref='ubicacion_011' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>C-012-011</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_c_012"/>
+        </record>
+        <record id='location_c_12_012' model='stock.location'>
+            <field name='name'>C-012-012</field>
+            <field name='posx'>2</field>
+            <field name='posy'>012</field>
+            <field name='posz'>012</field>
+            <!--<field ref='ubicacion_011' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>C-012-012</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_c_012"/>
+        </record>
+
+        <record id='location_c_013' model='stock.location'>
+            <field name='name'>C-013</field>
+            <field name='usage'>view</field>
+            <field name='active'>True</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_c"/>
+        </record>
+        <record id='location_c_014' model='stock.location'>
+            <field name='name'>C-014</field>
+            <field name='usage'>view</field>
+            <field name='active'>True</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_c"/>
+        </record>
+        <record id='location_c_015' model='stock.location'>
+            <field name='name'>C-015</field>
+            <field name='usage'>view</field>
+            <field name='active'>True</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_c"/>
+        </record>
+        <record id='location_c_016' model='stock.location'>
+            <field name='name'>C-016</field>
+            <field name='usage'>view</field>
+            <field name='active'>True</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_c"/>
+        </record>
+        <record id='location_c_017' model='stock.location'>
+            <field name='name'>C-017</field>
+            <field name='usage'>view</field>
+            <field name='active'>True</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_c"/>
+        </record>
+        <record id='location_c_018' model='stock.location'>
+            <field name='name'>C-018</field>
+            <field name='usage'>view</field>
+            <field name='active'>True</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_c"/>
+        </record>
+        <record id='location_c_019' model='stock.location'>
+            <field name='name'>C-019</field>
+            <field name='usage'>view</field>
+            <field name='active'>True</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_c"/>
+        </record>
+        <record id='location_c_020' model='stock.location'>
+            <field name='name'>C-20</field>
+            <field name='usage'>view</field>
+            <field name='active'>True</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_c"/>
+        </record>
+        <record id='location_c_021' model='stock.location'>
+            <field name='name'>C-021</field>
+            <field name='usage'>view</field>
+            <field name='active'>True</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_c"/>
+        </record>
+        <record id='location_c_022' model='stock.location'>
+            <field name='name'>C-022</field>
+            <field name='usage'>view</field>
+            <field name='active'>True</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_c"/>
+        </record>
+
+        <record id='location_c_13_010' model='stock.location'>
+            <field name='name'>C-013-010</field>
+            <field name='posx'>2</field>
+            <field name='posy'>013</field>
+            <field name='posz'>010</field>
+            <!--<field ref='ubicacion_011' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>C-013-010</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_c_013"/>
+        </record>
+        <record id='location_c_14_010' model='stock.location'>
+            <field name='name'>C-014-010</field>
+            <field name='posx'>2</field>
+            <field name='posy'>014</field>
+            <field name='posz'>010</field>
+            <!--<field ref='ubicacion_011' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>C-014-010</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_c_014"/>
+        </record>
+        <record id='location_c_15_010' model='stock.location'>
+            <field name='name'>C-015-010</field>
+            <field name='posx'>2</field>
+            <field name='posy'>015</field>
+            <field name='posz'>010</field>
+            <!--<field ref='ubicacion_011' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>C-015-010</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_c_015"/>
+        </record>
+        <record id='location_c_16_010' model='stock.location'>
+            <field name='name'>C-016-010</field>
+            <field name='posx'>2</field>
+            <field name='posy'>016</field>
+            <field name='posz'>010</field>
+            <!--<field ref='ubicacion_011' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>C-016-010</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_c_016"/>
+        </record>
+        <record id='location_c_17_010' model='stock.location'>
+            <field name='name'>C-017-010</field>
+            <field name='posx'>2</field>
+            <field name='posy'>017</field>
+            <field name='posz'>010</field>
+            <!--<field ref='ubicacion_011' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>C-017-010</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_c_017"/>
+        </record>
+        <record id='location_c_18_010' model='stock.location'>
+            <field name='name'>C-018-010</field>
+            <field name='posx'>2</field>
+            <field name='posy'>018</field>
+            <field name='posz'>010</field>
+            <!--<field ref='ubicacion_011' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>C-018-010</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_c_018"/>
+        </record>
+        <record id='location_c_19_010' model='stock.location'>
+            <field name='name'>C-019-010</field>
+            <field name='posx'>2</field>
+            <field name='posy'>019</field>
+            <field name='posz'>010</field>
+            <!--<field ref='ubicacion_011' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>C-019-010</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_c_019"/>
+        </record>
+        <record id='location_c_20_010' model='stock.location'>
+            <field name='name'>C-020-010</field>
+            <field name='posx'>2</field>
+            <field name='posy'>020</field>
+            <field name='posz'>010</field>
+            <!--<field ref='ubicacion_011' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>C-020-010</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_c_020"/>
+        </record>
+        <record id='location_c_21_010' model='stock.location'>
+            <field name='name'>C-021-010</field>
+            <field name='posx'>2</field>
+            <field name='posy'>021</field>
+            <field name='posz'>010</field>
+            <!--<field ref='ubicacion_011' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>C-021-010</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_c_021"/>
+        </record>
+        <record id='location_c_22_010' model='stock.location'>
+            <field name='name'>C-022-010</field>
+            <field name='posx'>2</field>
+            <field name='posy'>022</field>
+            <field name='posz'>010</field>
+            <!--<field ref='ubicacion_011' name='packaging_id'/>-->
+            <field name='usage'>internal</field>
+            <field name='active'>True</field>
+            <field name='barcode'>C-022-010</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='location_id' ref="location_c_022"/>
+        </record>
+
+
+
+
+    </data>
+</odoo>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="product_description" inherit_id="website_sale.product" name="Product">
+
+        <xpath expr="//p[@class='text-muted']" position="replace">
+            <div class="row" style="padding-bottom:1rem;">
+                <div class="col-md-7">
+                <!--Si es vino/fabricante-->
+                <t t-if="product.product_brand_id.bodega_id.manufacter_id" >
+                    <span class="text-muted">Fabricante/Grupo: </span><span t-field="product.product_brand_id.bodega_id.manufacter_id.name" class="text-muted"/>
+                    <br/>
+                </t>
+                <!--Si es vino/bodega-->
+                <t t-if="product.product_brand_id.bodega_id" >
+                    <span class="text-muted">Bodega: </span><span t-field="product.product_brand_id.bodega_id.name" class="text-muted"/>
+                    <br/>
+                </t>
+                <!--Si es no vino/fabricante-->
+                <t t-if="product.product_brand_id.manufacter_id and not product.product_brand_id.bodega_id" >
+                    <span class="text-muted">Fabricante/Grupo: </span><span t-field="product.product_brand_id.manufacter_id.name" class="text-muted"/>
+                    <br/>
+                </t>
+                <!--Bodega/Pais-->
+                <t t-if="product.product_brand_id.bodega_id.region_id.country_id" >
+                    <span class="text-muted">País: </span><span t-field="product.product_brand_id.bodega_id.region_id.country_id.name" class="text-muted"/>
+                    <br/>
+                </t>
+                <!--Bodega/Provincia-->
+                <t t-if="product.product_brand_id.bodega_id.state_id" >
+                    <span class="text-muted">Provincia: </span><span t-field="product.product_brand_id.bodega_id.state_id.name" class="text-muted"/>
+                    <br/>
+                </t>
+                <!--Bodega/Región-->
+                <t t-if="product.product_brand_id.bodega_id.region_id" >
+                    <span class="text-muted">Región: </span><span t-field="product.product_brand_id.bodega_id.region_id.name" class="text-muted"/>
+                    <br/>
+                </t>
+                <!--Bodega/Zona-->
+                <t t-if="product.product_brand_id.bodega_id.zona_id" >
+                    <span class="text-muted">Zona: </span><span t-field="product.product_brand_id.bodega_id.zona_id.name" class="text-muted"/>
+                    <br/>
+                </t>
+                <!--Fabricante/Pais-->
+                <t t-if="product.product_brand_id.manufacter_id.country_id and not product.product_brand_id.bodega_id" >
+                    <span class="text-muted">País: </span><span t-field="product.product_brand_id.manufacter_id.country_id.name" class="text-muted"/>
+                    <br/>
+                </t>
+                <!--Fabricante/Provincia-->
+                <t t-if="product.product_brand_id.manufacter_id.state_id and not product.product_brand_id.bodega_id" >
+                    <span class="text-muted">Provincia: </span><span t-field="product.product_brand_id.manufacter_id.state_id.name" class="text-muted"/>
+                    <br/>
+                </t>
+                <!--Fabricante/Región-->
+                <t t-if="product.product_brand_id.manufacter_id.region_id and not product.product_brand_id.bodega_id" >
+                    <span class="text-muted">Región: </span><span t-field="product.product_brand_id.manufacter_id.region_id.name" class="text-muted"/>
+                    <br/>
+                </t>
+                <!--Fabricante/Zona-->
+                <t t-if="product.product_brand_id.manufacter_id.zona_id and not product.product_brand_id.bodega_id" >
+                    <span class="text-muted">Zona: </span><span t-field="product.product_brand_id.manufacter_id.zona_id.name" class="text-muted"/>
+                    <br/>
+                </t>
+                <!--Variedad-->
+                <t t-if="product.variedad_id" >
+                    <span class="text-muted">Variedad: </span><span t-field="product.variedad_id" class="text-muted"/>
+                    <br/>
+                </t>
+                <t t-if="product.varietal_web" >
+                    <span class="text-muted">Descripción Varietal: </span><span t-field="product.varietal_web" class="text-muted"/>
+                    <br/>
+                </t>
+                <t t-if="product.enologo" >
+                    <span class="text-muted">Enólogo: </span><span t-field="product.enologo" class="text-muted"/>
+                    <br/>
+                </t>
+                <t t-if="product.alcohol" >
+                    <span class="text-muted">Alcohol: </span><span t-field="product.alcohol" class="text-muted"/>
+                    <br/>
+                </t>
+                <t t-if="product.puntaje_parker" >
+                    <span class="text-muted">Parker: </span><span t-field="product.puntaje_parker" class="text-muted"/>
+                    <br/>
+                </t>
+                <t t-if="product.puntaje_wine_enthusiast" >
+                    <span class="text-muted">Wine Enthusiast: </span><span t-field="product.puntaje_wine_enthusiast" class="text-muted"/>
+                    <br/>
+                </t>
+                <t t-if="product.puntaje_jancis_robinson" >
+                    <span class="text-muted">Jancis Robinson: </span><span t-field="product.puntaje_jancis_robinson" class="text-muted"/>
+                    <br/>
+                </t>
+                <t t-if="product.puntaje_wine_spectator" >
+                    <span class="text-muted">Wine Spectator: </span><span t-field="product.puntaje_wine_spectator" class="text-muted"/>
+                    <br/>
+                </t>
+                <t t-if="product.puntaje_james_suckling" >
+                    <span class="text-muted">James Suckling: </span><span t-field="product.puntaje_james_suckling" class="text-muted"/>
+                    <br/>
+                </t>
+                <t t-if="product.puntaje_tim_atkin" >
+                    <span class="text-muted">Tim Atkin: </span><span t-field="product.puntaje_tim_atkin" class="text-muted"/>
+                    <br/>
+                </t>
+                <t t-if="product.puntaje_international_wine_challenge" >
+                    <span class="text-muted">International Wine Challenge: </span><span t-field="product.puntaje_international_wine_challenge" class="text-muted"/>
+                    <br/>
+                </t>
+                <t t-if="product.puntaje_decanter" >
+                    <span class="text-muted">Decanter: </span><span t-field="product.puntaje_decanter" class="text-muted"/>
+                    <br/>
+                </t>
+                <t t-if="product.puntaje_guia_penin" >
+                    <span class="text-muted">Guía Peñín: </span><span t-field="product.puntaje_guia_penin" class="text-muted"/>
+                    <br/>
+                </t>
+                <t t-if="product.puntaje_descorchados" >
+                    <span class="text-muted">Descorchados: </span><span t-field="product.puntaje_descorchados" class="text-muted"/>
+                    <br/>
+                </t>
+                <t t-if="product.puntajes" >
+                    <span class="text-muted">Puntaje: </span><span t-field="product.puntajes" class="text-muted"/>
+                    <br/>
+                </t>
+                <div class="o_sharing_links pro-link-share">
+                    <label>Compartir</label>
+                    <a class="fb fa fa-twitter o_twitter"></a>
+                    <a class="tw fa fa-facebook o_facebook"></a>
+                    <a class="in fa fa-linkedin o_linkedin"></a>
+                </div>
+            </div>
+            <div class="col-md-5">
+                    <!-- agrego logo de la marca-->
+                    <!--<a t-att-href="'/shop/brand/%s' % slug(product.product_brand_id)" >-->
+                        <span itemprop="image_brand" t-field="product.product_brand_id.logo" t-options="{'widget': 'image', 'alt-field': 'name', 'resize': '300x100'}" />
+                    <!--</a>-->
+                </div>
+            </div>
+        </xpath>
+
+
+    </template>
+
+</odoo>

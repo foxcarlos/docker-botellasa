@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record model="ir.ui.view" id="products_packaging_form_view">
+            <field name="name">packaging</field>
+            <field name="model">product.packaging</field>
+            <field name="inherit_id" ref="product.product_packaging_form_view"/>
+            <field name="arch" type="xml">          
+                <field name="barcode" position="after">
+                    <field name="gross_weight_per_box"/>
+                    <field name="net_weight_per_box" />
+                    <field name="price_per_box"/>
+                    <field name="medida_caja_largo"/>
+                    <field name="medida_caja_ancho"/>
+                    <field name="medida_caja_alto"/>          
+                </field>
+            </field>
+      </record>
+    </data>
+</odoo>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <!-- Region filter -->
+    <template id="list_regions">
+        <ul class="nav nav-pills flex-column pro_region">
+            <t t-foreach="regions" t-as="region">
+                <li class="nav-item">
+                    <label style="margin: 0 20px;" t-attf-class="nav-link#{' active' if region.id in region_set else ''}">
+                        <input type="checkbox"
+                        name="regions"
+                        t-att-value="'%s-%s' % (region.name,region.id)"
+                        t-att-checked="'checked' if region.id in region_set else None"/>
+                        <span style="font-weight: normal"
+                            t-field="region.name" />
+                    </label>
+                </li>
+            </t>
+        </ul>
+    </template>
+    <template id="website_product_region_filter"
+        inherit_id="website_sale.products_attributes"
+        name="Product Region's Filter"
+        customize_show="True" active="True">
+        <xpath expr="//form[hasclass('js_attributes')]//ul[hasclass('nav')]" position="inside">
+            <t t-if="regions">
+                <li class="region_clear">
+                    <div id="region_name">
+                        <strong>Región</strong>
+                    </div>
+                    <t t-if="len(regions)&gt;4">
+                        <div id='filter_div'>
+                            <t t-call="botella_website_filters.list_regions" />
+                        </div>
+                    </t>
+                    <t t-if="len(regions)&lt;=4">
+                        <t t-call="botella_website_filters.list_regions" />
+                    </t>
+                </li>
+            </t>
+        </xpath>
+    </template>
+
+</odoo>

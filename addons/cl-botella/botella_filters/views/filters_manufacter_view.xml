@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record model="ir.ui.view" id="view_product_manufacter_tree">
+            <field name="name">product.manufacter</field>
+            <field name="model">product.manufacter</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="name"/>
+                    <field name="code"/>
+                    <field name="zona_id"/>
+                    <field name="state_id"/>
+                    <field name="region_id"/>
+                    <field name="country_id"/>
+                </tree>
+            </field>
+        </record>
+        <record model="ir.ui.view" id=" view_product_manufacter_form">
+            <field name="name">product.manufacter</field>
+            <field name="model">product.manufacter</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group name="group_top">
+                            <group name="group_left">
+                                <field name="name" required="True" />
+                                <field name="code"/>
+                                <field name="country_id"/>
+                                <field name="state_id"/>
+                                <field name="region_id"/>
+                                <field name="zona_id"/> 
+                                <field name="historia_bodega_corta"/>
+                                <field name="historia_bodega_larga"/>
+                                <field name="image_medium" widget="image"/>
+                            </group>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <act_window id="action_filters_manufacter" name="Fabicantes/Grupos" res_model="product.manufacter" view_mode="tree,form"/>
+        <menuitem id="filtro_manufacter" name="Fabricantes/Grupos" action="action_filters_manufacter" parent="submenu_filtros" sequence="4"/>
+    </data>
+</odoo>

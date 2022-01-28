@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8'?>
+    <openerp>
+        <data noupdate='1'>
+        <record id='sequence_remito' model='ir.sequence'>
+            <field name='name'>Secuencia Remito</field>
+            <field name='implementation'>no_gap</field>
+            <field name='prefix'>0003-</field>
+            <field name='padding'>8</field>
+            <field name='number_increment'>1</field>
+            <field name='number_next_val'>1</field>
+            <field name='active'>True</field>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+        </record>
+
+        <record id='stock_book_remito' model='stock.book'>
+            <field name='name'>0003</field>
+            <field ref='sequence_remito' name='sequence_id'/>
+            <field name='company_id' model='res.company' search="[('name','=','Botella SAS')]"/>
+            <field name='lines_per_voucher'>0</field>
+        </record>
+
+    </data>
+</openerp>

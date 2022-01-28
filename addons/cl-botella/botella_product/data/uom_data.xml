@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+         <record model='uom.uom' id='uom_caja_1'>
+            <field name='name'>Caja x 1</field>
+            <field name='category_id' ref="uom.product_uom_categ_unit"/>
+            <field name='uom_type'>bigger</field>
+            <field name='factor_inv'>1</field>
+            <field name='active'>True</field>
+        </record>
+        <record model='uom.uom' id='uom_caja_2'>
+            <field name='name'>Caja x 2</field>
+            <field name='category_id' ref="uom.product_uom_categ_unit"/>
+            <field name='uom_type'>bigger</field>
+            <field name='factor_inv'>2</field>
+            <field name='active'>True</field>
+        </record>
+        <record model='uom.uom' id='uom_caja_3'>
+            <field name='name'>Caja x 3</field>
+            <field name='category_id' ref="uom.product_uom_categ_unit"/>
+            <field name='uom_type'>bigger</field>
+            <field name='factor_inv'>3</field>
+            <field name='active'>True</field>
+        </record>
+        <record model='uom.uom' id='uom_caja_4'>
+            <field name='name'>Caja x 4</field>
+            <field name='category_id' ref="uom.product_uom_categ_unit"/>
+            <field name='uom_type'>bigger</field>
+            <field name='factor_inv'>4</field>
+            <field name='active'>True</field>
+        </record>
+        <record model='uom.uom' id='uom_caja_5'>
+            <field name='name'>Caja x 5</field>
+            <field name='category_id' ref="uom.product_uom_categ_unit"/>
+            <field name='uom_type'>bigger</field>
+            <field name='factor_inv'>5</field>
+            <field name='active'>True</field>
+        </record>
+        <record model='uom.uom' id='uom_caja_6'>
+            <field name='name'>Caja x 6</field>
+            <field name='category_id' ref="uom.product_uom_categ_unit"/>
+            <field name='uom_type'>bigger</field>
+            <field name='factor_inv'>6</field>
+            <field name='active'>True</field>
+        </record>
+        <record model='uom.uom' id='uom_caja_7'>
+            <field name='name'>Caja x 7</field>
+            <field name='category_id' ref="uom.product_uom_categ_unit"/>
+            <field name='uom_type'>bigger</field>
+            <field name='factor_inv'>7</field>
+            <field name='active'>True</field>
+        </record>
+        <record model='uom.uom' id='uom_caja_8'>
+            <field name='name'>Caja x 8</field>
+            <field name='category_id' ref="uom.product_uom_categ_unit"/>
+            <field name='uom_type'>bigger</field>
+            <field name='factor_inv'>8</field>
+            <field name='active'>True</field>
+        </record>
+        <record model='uom.uom' id='uom_caja_12'>
+            <field name='name'>Caja x 12</field>
+            <field name='category_id' ref="uom.product_uom_categ_unit"/>
+            <field name='uom_type'>bigger</field>
+            <field name='factor_inv'>12</field>
+            <field name='active'>True</field>
+        </record>
+        <record model='uom.uom' id='uom_caja_16'>
+            <field name='name'>Caja x 16</field>
+            <field name='category_id' ref="uom.product_uom_categ_unit"/>
+            <field name='uom_type'>bigger</field>
+            <field name='factor_inv'>16</field>
+            <field name='active'>True</field>
+        </record>
+        <record model='uom.uom' id='uom_caja_24'>
+            <field name='name'>Caja x 24</field>
+            <field name='category_id' ref="uom.product_uom_categ_unit"/>
+            <field name='uom_type'>bigger</field>
+            <field name='factor_inv'>24</field>
+            <field name='active'>True</field>
+        </record>
+    </data>
+</odoo>

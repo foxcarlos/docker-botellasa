@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record model="ir.ui.view" id="filters_brand_view">
+        <field name="name">product.brand</field>
+        <field name="model">product.brand</field>
+        <field name="inherit_id" ref="botella_product.view_product_brand_form_inherit"/>
+        <field name="arch" type="xml">
+            <field name="manufacture_name" position="after">
+                <field name="bodega_id" />
+                <field name="manufacter_id" />
+                <field name="country_id" />
+            </field>
+        </field>
+        </record>
+
+        <record model="ir.ui.view" id="view_product_brand_tree_inherit_country">
+        <field name="name">product.brand</field>
+        <field name="model">product.brand</field>
+        <field name="inherit_id" ref="product_brand.view_product_brand_tree"/>
+        <field name="arch" type="xml">
+            <field name="description" position="before">
+              <field name="country_id" />
+            </field>
+        </field>
+      </record>
+    </data>
+</odoo>

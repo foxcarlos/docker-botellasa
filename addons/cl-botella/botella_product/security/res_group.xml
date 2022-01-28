@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="group_botellasas_wholesaler" model="res.groups">
+        <field name="name">Botellasas Mayorista</field>
+    </record>
+    <record id="group_botellasas_supplier" model="res.groups">
+        <field name="name">Botellasas Proveedor</field>
+    </record>
+    <record id="group_botellasas_agent" model="res.groups">
+        <field name="name">Botellasas Agente (Vendedor/Cobrador)</field>
+    </record>
+</odoo>

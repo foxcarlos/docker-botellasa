@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- Creo wizard y acción de importación del archivo-->
+        <record id="occupied_position_xls_view" model="ir.ui.view">
+            <field name="name">occupied_position</field>
+            <field name="model">botella_reports_pantos.occupied_position</field>
+            <field name="arch" type="xml">
+                <form string="Posiciones ocupadas">
+                    <header>
+                        <button name="export_file" string="Exportar Reporte" type="object"
+                                class="btn-primary"/>
+                    </header>
+                    <sheet>
+                        <group>
+                            <field name="file_report" filename="file_name" readonly="True"/>
+                            <field name="file_name" invisible="1" />
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <record id="action_occupied_position_xls" model="ir.actions.act_window">
+            <field name="name">Posiciones ocupadas</field>
+            <field name="res_model">botella_reports_pantos.occupied_position</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="view_mode">form</field>
+            <field name="view_type">form</field>
+            <field name="target">new</field>
+        </record>
+
+        <menuitem name="Informes Excel" 
+                id="menu_export_OccupiedPosition"  
+                parent="stock.menu_warehouse_report"
+                sequence="22"/>
+        <menuitem name="Posiciones ocupadas" 
+                id="submenu_export_OccupiedPosition"  
+                parent="menu_export_OccupiedPosition"
+                action="action_occupied_position_xls" 
+                sequence="1"/>
+
+    </data>
+</odoo>

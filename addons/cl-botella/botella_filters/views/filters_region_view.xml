@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record model="ir.ui.view" id="view_region_tree">
+            <field name="name">res.country.region</field>
+            <field name="model">res.country.region</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="name"/>
+                    <field name="country_id"/>
+                </tree>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id=" view_region_form">
+            <field name="name">res.country.region</field>
+            <field name="model">res.country.region</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group name="group_top">
+                            <group name="group_left">
+                                <field name="name" required="True" />
+                                <field name="country_id"/>
+                            </group>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <act_window id="action_filters_region" name="Region" res_model="res.country.region" view_mode="tree,form"/>
+        <menuitem id="filtro_region" name="Region" action="action_filters_region" parent="submenu_filtros" sequence="3"/>
+    </data>
+</odoo>

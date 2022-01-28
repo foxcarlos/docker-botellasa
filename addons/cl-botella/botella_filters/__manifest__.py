@@ -1,0 +1,17 @@
+{
+    'name' : 'Botella Filtros',
+    'version': '1.0',
+    'description': ' Agrega filtros',
+    'author': 'Romina Bazan',
+    'depends': ['base','botella_menu','product'],
+    'data' : ['security/ir.model.access.csv',
+              'views/filters_zone_view.xml',
+              'views/filters_region_view.xml',
+              'views/filters_manufacter_view.xml',
+              'views/filters_bodega_view.xml',
+              'views/filters_brand_view.xml',
+              'wizards/load_filters_view.xml',
+              'views/products_variety.xml',
+             ],
+    'installable': True,
+}

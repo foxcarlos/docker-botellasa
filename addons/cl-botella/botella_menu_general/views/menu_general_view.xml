@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+         <record model="ir.ui.menu" id="calendar.mail_menu_calendar">
+            <field name="name">CALENDARIO</field>
+            <field name="web_icon">botella_menu_general,static/description/CALENDARIO.png</field>
+            <field name="sequence">1</field>
+            <field name="groups_id" eval="[(6,0, [ref('botella_menu_general.group_botellasas')])]"/>
+        </record>
+       <record model="ir.ui.menu" id="contacts.menu_contacts">
+            <field name="name">CONTACTOS</field>
+            <field name="web_icon">botella_menu_general,static/description/CONTACTOS.png</field>
+            <field name="sequence">2</field>
+            <field name="groups_id" eval="[(6,0, [ref('botella_menu_general.group_botellasas')])]"/>
+        </record>
+        <record model="ir.ui.menu" id="website.menu_website_configuration">
+            <field name="name">WEBS</field>
+            <field name="web_icon">botella_menu_general,static/description/SITIOWEB.png</field>
+            <field name="sequence">3</field>
+            <field name="groups_id" eval="[(6,0, [ref('botella_menu_general.group_botellasas')])]"/>
+        </record>
+         <record model="ir.ui.menu" id="mail.menu_root_discuss">
+            <field name="name">CONVERSACIONES</field>
+            <field name="web_icon">botella_menu_general,static/description/CONVERSACIONES.png</field>
+            <field name="sequence">1</field>
+            <field name="groups_id" eval="[(6,0, [ref('botella_menu_general.group_botellasas')])]"/>
+        </record>
+        <record model="ir.ui.menu" id="sale.sale_menu_root">
+            <field name="name">VENTAS</field>
+            <field name="web_icon">botella_menu_general,static/description/VENTAS.png</field>
+            <field name="sequence">5</field>
+        </record>
+        <record model="ir.ui.menu" id="crm.crm_menu_root">
+            <field name="name">CRM</field>
+            <field name="web_icon">botella_menu_general,static/description/CRM.png</field>
+            <field name="sequence">6</field>
+        </record>
+        <record model="ir.ui.menu" id="mass_mailing.mass_mailing_menu_root">
+            <field name="name">MARKETING POR EMAIL</field>
+            <field name="web_icon">botella_menu_general,static/description/EMAILMARKETING.png</field>
+            <field name="sequence">7</field>
+        </record>
+        <record model="ir.ui.menu" id="marketing_automation.marketing_automation_menu">
+            <field name="name">MARKETING AUTOMATIZADO</field>
+            <field name="web_icon">botella_menu_general,static/description/MARKETINGAUTOMATION.png</field>
+            <field name="sequence">8</field>
+        </record>
+        <record model="ir.ui.menu" id="helpdesk.menu_helpdesk_root">
+            <field name="name">ASISTENCIA PERSONAL</field>
+            <field name="web_icon">botella_menu_general,static/description/ASISTENCIAPERSONAL.png</field>
+            <field name="sequence">9</field>
+        </record>
+        <record model="ir.ui.menu" id="base.menu_board_root">
+            <field name="name">TABLEROS</field>
+            <field name="web_icon">botella_menu_general,static/description/TABLEROS.png</field>
+            <field name="sequence">10</field>
+            <field name="groups_id" eval="[(6,0, [ref('botella_menu_general.group_botellasas')])]"/>
+        </record>
+        <record model="ir.ui.menu" id="account.menu_finance">
+            <field name="name">FACTURACION</field>
+            <field name="web_icon">botella_menu_general,static/description/FACTURACION.png</field>
+            <field name="sequence">11</field>
+        </record>
+        <record model="ir.ui.menu" id="purchase.menu_purchase_root">
+            <field name="name">COMPRAS</field>
+            <field name="web_icon">botella_menu_general,static/description/COMPRAS.png</field>
+            <field name="sequence">12</field>
+        </record>
+        <!--<record model="ir.ui.menu" id="documents.menu_root">
+            <field name="name">DOCUMENTOS</field>
+            <field name="web_icon">botella_menu_general,static/description/DOCUMENTOS.png</field>
+            <field name="sequence">13</field>
+            <field name="groups_id" eval="[(6,0, [ref('botella_menu_general.group_botellasas')])]"/>
+        </record>-->
+        <record model="ir.ui.menu" id="hr.menu_hr_root">
+            <field name="name">EMPLEADOS</field>
+            <field name="web_icon">botella_menu_general,static/description/EMPLEADOS.png</field>
+            <field name="sequence">14</field>
+            <field name="groups_id" eval="[(6,0, [ref('botella_menu_general.group_botellasas')])]"/>
+        </record>
+        <record model="ir.ui.menu" id="im_livechat.menu_livechat_root">
+            <field name="name">CHAT EN VIVO</field>
+            <field name="web_icon">botella_menu_general,static/description/CHATENVIVO.jpeg</field>
+            <field name="sequence">15</field>
+        </record>
+        <record model="ir.ui.menu" id="botella_menu.menu_botella">
+            <field name="name">Alta Productos</field>
+            <field name="web_icon">botella_menu_general,static/description/ALTAPRODUCTOS.png</field>
+            <field name="sequence">16</field>
+            <field name="groups_id" eval="[(6,0, [ref('stock.group_stock_manager')])]"/>
+        </record>
+        <record model="ir.ui.menu" id="stock.menu_stock_root">
+            <field name="name">INVENTARIO</field>
+            <field name="web_icon">botella_menu_general,static/description/EQUIPO.png</field>
+            <field name="sequence">17</field>
+        </record>
+        <record model="ir.ui.menu" id="account.menu_account_customer">
+            <field name="name">CONTABILIDAD</field>
+            <field name="web_icon">botella_menu_general,static/description/CONTABILIDAD.png</field>
+            <field name="sequence">18</field>
+        </record>
+        <record model="ir.ui.menu" id="utm.menu_link_tracker_root">
+            <field name="name">RASTREO ENLACES</field>
+            <field name="web_icon">botella_menu_general,static/description/RASTREOENLACE.png</field>
+            <field name="sequence">19</field>
+        </record>
+        <!--
+            TODO: account_accountant
+        <record model="ir.ui.menu" id="account_accountant.menu_accounting">
+            <field name="name">CONTABILIDAD</field>
+            <field name="web_icon">botella_menu_general,static/description/CONTABILIDAD.png</field>
+            <field name="sequence">20</field>
+        </record>
+        TODO: stock_barcode - pantos - ver cual usar
+        <record model="ir.ui.menu" id="stock_barcode.stock_barcode_menu">
+            <field name="name">PANTOS</field>
+            <field name="web_icon">botella_menu_general,static/description/pantos.jpe</field>
+            <field name="sequence">21</field>
+        </record>-->
+        <record model="ir.ui.menu" id="base.menu_management">
+            <field name="name">PROGRAMAS</field>
+            <field name="web_icon">botella_menu_general,static/description/APLICACIONES.png</field>
+            <field name="sequence">90</field>
+        </record>
+        <record model="ir.ui.menu" id="base.menu_administration">
+            <field name="name">AJUSTES</field>
+            <field name="web_icon">botella_menu_general,static/description/AJUSTES.png</field>
+            <field name="sequence">100</field>
+        </record>
+    </data>
+</odoo>

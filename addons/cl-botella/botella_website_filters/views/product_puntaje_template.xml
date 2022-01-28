@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <!-- Zona filter -->
+    <template id="website_product_puntajes_filter"
+        inherit_id="website_sale.products_attributes"
+        name="Product Puntajes's Filter"
+        customize_show="True" active="True">
+        <xpath expr="//form[hasclass('js_attributes')]//ul[hasclass('nav')]" position="inside">
+            <t t-if="puntajes">
+                <li class="puntajes_clear">
+                    <div id="puntajes_name">
+                        <strong>Puntajes</strong>
+                    </div>
+                    <div id='filter_div'>
+                        <ul class="nav nav-pills flex-column pro_zona">
+                            <t t-foreach="puntajes" t-as="puntaje">
+                                <li class="nav-item">
+                                    <label style="margin: 0 20px;" t-attf-class="nav-link#{' active' if puntaje[0] in puntaje_set else ''}">
+                                        <input type="checkbox"
+                                        name="puntajes"
+                                        t-att-value="'%s' % (puntaje[0])"
+                                        t-att-checked="'checked' if puntaje[0] in puntaje_set else None"/>
+                                        <span style="font-weight: normal"
+                                            t-esc="'%s' % (puntaje[1])" />
+                                    </label>
+                                </li>
+                            </t>
+                        </ul>
+                    </div>
+                </li>
+            </t>
+        </xpath>
+    </template>
+</odoo>

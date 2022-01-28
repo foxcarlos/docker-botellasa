@@ -1,0 +1,19 @@
+
+.o_main_navbar {
+	background-color: #43a1ba;
+	border-bottom: 1px solid #2387a7;
+}
+
+
+.o_main_navbar > ul > li > a:hover, .o_main_navbar > ul > li > label:hover {
+	background-color: #2387a7;
+}
+
+.o_main_navbar > a:hover, .o_main_navbar > a:focus, .o_main_navbar > button:hover, .o_main_navbar > button:focus {
+	background-color: #2387a7;
+	color: inherit;
+}
+
+.o_main_navbar .show .dropdown-toggle {
+	background-color: #2387a7;
+}

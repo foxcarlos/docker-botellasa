@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <!-- variedade filter -->
+    <template id="list_variedades">
+        <ul class="nav nav-pills flex-column pro_variedade">
+            <t t-foreach="variedades" t-as="variedade">
+                <li class="nav-item">
+                    <label style="margin: 0 20px;" t-attf-class="nav-link#{' active' if variedade.id in variedad_set else ''}">
+                        <input type="checkbox"
+                        name="variedades"
+                        t-att-value="'%s-%s' % (variedade.name_variedad,variedade.id)"
+                        t-att-checked="'checked' if variedade.id in variedad_set else None"/>
+                        <span style="font-weight: normal"
+                            t-field="variedade.name_variedad" />
+                    </label>
+                </li>
+            </t>
+        </ul>
+    </template>
+    <template id="website_product_variedades_filter"
+        inherit_id="website_sale.products_attributes"
+        name="Product variedades's Filter"
+        customize_show="True" active="True">
+        <xpath expr="//form[hasclass('js_attributes')]//ul[hasclass('nav')]" position="inside">
+            <t t-if="variedades">
+                <li class="variedade_clear">
+                    <div id="variedade_name">
+                        <strong>Variedades</strong>
+                    </div>
+                    <t t-if="len(variedades)&gt;4">
+                        <div id='filter_div'>
+                            <t t-call="botella_website_filters.list_variedades" />
+                        </div>
+                    </t>
+                    <t t-if="len(variedades)&lt;=4">
+                        <t t-call="botella_website_filters.list_variedades" />
+                    </t>
+                </li>
+            </t>
+        </xpath>
+    </template>
+
+    <template id="variedades_clear_attribute_filter" name="Variedades's Clear Filter Option" inherit_id="botella_website_filters.website_product_variedades_filter" active="False" customize_show="True">
+        <xpath expr="//li[hasclass('variedade_clear')]" position="before">
+            <t t-set="attr_section_open" t-value="False"/>
+            <t t-foreach="variedades" t-as="variedade">
+                <t t-if="variedade.id in variedad_set">
+                    <t t-set="attr_section_open" t-value="True"/>
+                </t>
+            </t>
+        </xpath>
+        <xpath expr="//li[hasclass('variedade_clear')]/div/strong" position="after">
+            <t t-if="attr_section_open">
+                <span class="clear_attr_filter">
+                    <i class="fa fa-times"/>Borrar.
+                </span>
+            </t>
+        </xpath>
+    </template>
+
+</odoo>

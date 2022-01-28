@@ -1,0 +1,38 @@
+.o_home_menu_background {
+	//background: url(/web_enterprise/static/src/img/home-menu-bg-overlay.svg), linear-gradient(to right bottom, #2387a7, #ade7eb);
+	background: #f0ffff;
+	background-size: cover;
+}
+
+.o_home_menu .o_home_menu_scrollable .o_apps .o_app .o_caption {
+	color: #323232;
+	//text-shadow: 0 1px 0px rgba(0, 0, 0, 0.8);
+	text-shadow: 0 0px 0px !important;
+}
+
+.o_main_navbar {
+	background-color: #43a1ba !important;
+	border-bottom: 1px solid #2387a7 !important;
+}
+
+
+.o_main_navbar > ul > li > a:hover, .o_main_navbar > ul > li > label:hover {
+	background-color: #2387a7;
+}
+
+.o_main_navbar > a:hover, .o_main_navbar > a:focus, .o_main_navbar > button:hover, .o_main_navbar > button:focus {
+	background-color: #2387a7;
+	color: inherit;
+}
+
+.o_searchview .o_searchview_facet .o_searchview_facet_label {
+	background-color: #43a1ba;
+}
+
+.o_main_navbar .show .dropdown-toggle {
+	background-color: #2387a7;
+}
+
+.o_home_menu {
+	font-size: 18px;
+}

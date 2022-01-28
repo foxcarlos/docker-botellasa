@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+		<record model="ir.ui.view" id="vpicktree">
+            <field name="name">stock.picking.tree.inherit</field>
+            <field name="model">stock.picking</field>
+            <field name="inherit_id" ref="stock_reception_screen.vpicktree"/>
+            <field name="arch" type="xml">
+                <button name="action_reception_screen_open" position="replace">
+                    <button
+                        name="action_reception_screen_open"
+                        type="object"
+                        string="Reception"
+                        class="oe_highlight"
+                        attrs="{'invisible': [
+                          '|',
+                          ('picking_type_code', 'not in', ['incoming','internal']),
+                          ('state', 'in', ('cancel', 'done')),
+                        ]}"
+                    />
+                </button>
+
+            </field>
+        </record>
+
+
+    </data>
+</odoo>

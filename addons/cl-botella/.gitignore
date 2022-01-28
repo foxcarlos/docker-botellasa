@@ -1,0 +1,6 @@
+*.pyc
+*.jasper
+*~
+.idea/**
+*.properties
+botella_default/__manifest__.py

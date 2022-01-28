@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data noupdate="1">
+
+        <record id="l10n_ar_aeroo_stock.action_aeroo_report_ar_stock_picking" model="ir.actions.report">
+	        <field name="report_data" type="base64" file="l10n_ar_aeroo_stock_report_extension/stock_picking.odt"/>
+	        <field name="report_file">l10n_ar_aeroo_stock_report_extension/stock_picking.odt</field>
+	        <field name="tml_source">file</field>
+	        <field name="background_image" type="base64" file="l10n_ar_aeroo_stock_report_extension/stock_picking.png"/>
+        <field name="process_sep" eval="True"/>
+	    </record>
+
+    </data>
+</openerp>

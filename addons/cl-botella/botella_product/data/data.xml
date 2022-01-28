@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+
+        <record model='product.attribute' id='product_variant_varietal'>
+            <field name='name'>Varietal</field>
+            <field name='display_type'>radio</field>
+            <field name='create_variant'>no_variant</field>
+        </record>
+
+        <record model='product.attribute' id='product_variant_anio'>
+            <field name='name'>Año</field>
+            <field name='display_type'>radio</field>
+            <field name='create_variant'>no_variant</field>
+        </record>
+
+        <record model='product.attribute' id='product_variant_litros'>
+            <field name='name'>Litros</field>
+            <field name='display_type'>radio</field>
+            <field name='create_variant'>no_variant</field>
+        </record>
+
+        <record model='product.attribute' id='product_variant_pais'>
+            <field name='name'>País</field>
+            <field name='display_type'>radio</field>
+            <field name='create_variant'>no_variant</field>
+        </record>
+
+
+        <record model='product.attribute' id='product_variant_region'>
+            <field name='name'>Región</field>
+            <field name='display_type'>radio</field>
+            <field name='create_variant'>no_variant</field>
+        </record>
+
+        <record model='product.attribute' id='product_variant_fabrica'>
+            <field name='name'>Fábrica</field>
+            <field name='display_type'>radio</field>
+            <field name='create_variant'>no_variant</field>
+        </record>
+
+        <record model='product.attribute' id='product_variant_marca'>
+            <field name='name'>Marca</field>
+            <field name='display_type'>radio</field>
+            <field name='create_variant'>no_variant</field>
+        </record>
+
+        <record model='product.attribute' id='product_variant_producto'>
+            <field name='name'>Producto</field>
+            <field name='display_type'>radio</field>
+            <field name='create_variant'>no_variant</field>
+        </record>
+
+        <record model='product.attribute' id='product_variant_bodega'>
+            <field name='name'>Bodega</field>
+            <field name='display_type'>radio</field>
+            <field name='create_variant'>no_variant</field>
+        </record>
+
+        <record model='product.attribute' id='product_variant_formato'>
+            <field name='name'>Formato</field>
+            <field name='display_type'>radio</field>
+            <field name='create_variant'>no_variant</field>
+        </record>
+
+    </data>
+</odoo>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <!-- Provincia filter -->
+    <template id="list_states">
+        <ul class="nav nav-pills flex-column pro_provincia">
+            <t t-foreach="provincias" t-as="provincia">
+                <li class="nav-item">
+                    <label style="margin: 0 20px;" t-attf-class="nav-link#{' active' if provincia.id in provincia_set else ''}">
+                        <input type="checkbox"
+                        name="provincias"
+                        t-att-value="'%s-%s' % (provincia.name,provincia.id)"
+                        t-att-checked="'checked' if provincia.id in provincia_set else None"/>
+                        <span style="font-weight: normal"
+                            t-field="provincia.name" />
+                    </label>
+                </li>
+            </t>
+        </ul>
+    </template>
+    <template id="website_product_provincia_filter"
+        inherit_id="website_sale.products_attributes"
+        name="Product Provincia's Filter"
+        customize_show="True" active="True">
+        <xpath expr="//form[hasclass('js_attributes')]//ul[hasclass('nav')]" position="inside">
+            <t t-if="provincias">
+                <li class="provincia_clear">
+                    <div id="provincia_name">
+                        <strong>Provincia</strong>
+                    </div>
+                    <t t-if="len(provincias)&gt;4">
+                        <div id='filter_div'>
+                            <t t-call="botella_website_filters.list_states" />
+                        </div>
+                    </t>
+                    <t t-if="len(provincias)&lt;=4">
+                        <t t-call="botella_website_filters.list_states" />
+                    </t>
+                </li>
+            </t>
+        </xpath>
+    </template>
+</odoo>

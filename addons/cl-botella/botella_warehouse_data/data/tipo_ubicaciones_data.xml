@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8'?>
+    <openerp>
+        <data noupdate='1'>
+        <record id='ubicacion_001' model='stock.location.storage.type'>
+            <field name='name'>Posición 001</field>
+            <field name='max_height'>410</field>
+            <field name='max_weight'>400</field>
+        </record>
+        <record id='ubicacion_002' model='stock.location.storage.type'>
+            <field name='name'>Posición 002</field>
+            <field name='max_height'>540</field>
+            <field name='max_weight'>1000</field>
+        </record>
+        <record id='ubicacion_003' model='stock.location.storage.type'>
+            <field name='name'>Posición 003</field>
+            <field name='max_height'>640</field>
+            <field name='max_weight'>600</field>
+        </record>
+        <record id='ubicacion_004' model='stock.location.storage.type'>
+            <field name='name'>Posición 004</field>
+            <field name='max_height'>1800</field>
+            <field name='max_weight'>1000</field>
+        </record>
+    </data>
+</openerp>

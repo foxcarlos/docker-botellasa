@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record model='ir.ui.view' id='product_variety_tree'>
+            <field name='name'>product.variety.tree</field>
+              <field name='model'>product.variety</field>
+              <field name='type'>tree</field>
+              <field name='arch' type='xml'>
+                  <tree>
+                    <field name="name_variedad" />
+                    <field name="code" />
+                    <field name="sinonimo_variedad" />
+                    <field name="categoria_padre" />
+                  </tree>
+            </field>
+        </record>
+
+        <record id="view_form_product_variety" model="ir.ui.view">
+      <field name="name">producto variedad Form</field>
+      <field name="model">product.variety</field>
+      <field name="arch" type="xml">
+        <form>
+          <sheet>
+            <group name="group_top">
+              <group name="group_left">
+                <field name="name_variedad" />
+                <field name="code" />
+                <field name="sinonimo_variedad" />
+                <field name="categoria_padre" />
+              </group>
+            </group>
+          </sheet>
+        </form>
+      </field>
+    </record>
+
+    <act_window id="action_product_variety" name="Variedad" res_model="product.variety" view_mode="tree,form"/>
+    <menuitem name="Variedad" id="variety" action="action_product_variety" parent="website_sale.menu_catalog"/>
+    <menuitem id="menu_carga_variedad" name="Variedad" action="action_product_variety" parent="botella_menu.submenu_botella" sequence="9"/>
+    </data>
+
+    <record model="ir.ui.view" id="product_form_view_inherit_filters">
+        <field name="name">product</field>
+        <field name="model">product.template</field>
+        <field name="inherit_id" ref="botella_product.product_form_view"/>
+        <field name="arch" type="xml">
+            <field name="enologo" position="after">
+                <field name="variedad_id" attrs="{'invisible':[('area', '!=', 'Vinos')]}"/>
+                <field name="varietal_web" attrs="{'invisible':[('area', '!=', 'Vinos')]}"/>
+                <field name="country_id"/>
+                <field name="state_id"/>
+                <field name="region_id"/>
+                <field name="zona_id"/>
+            </field>
+        </field>
+        </record>
+</odoo>

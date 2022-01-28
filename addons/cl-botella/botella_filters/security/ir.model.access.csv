@@ -1,0 +1,7 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_filters_zone,access_res_country_zone,model_res_country_zone,,1,1,1,1
+access_filters_region,access_res_country_region,model_res_country_region,,1,1,1,1
+access_filters_manufacter,access_product_manufacter,model_product_manufacter,,1,1,1,1
+access_filters_bodega,access_product_bodega,model_product_bodega,,1,1,1,1
+access_filters_brand,access_product_brand,model_product_brand,,1,1,1,1
+access_product_variety,access_product_variety,model_product_variety,,1,1,1,1

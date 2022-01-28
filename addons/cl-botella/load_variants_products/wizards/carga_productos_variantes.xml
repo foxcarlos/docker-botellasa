@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- Creo wizard y acción de importación del archivo-->
+        <record id="view_wzd_carga_articulos" model="ir.ui.view">
+            <field name="name">view_townconnection_carga_masiva_productos_wizard</field>
+            <field name="model">townconnection.carga_masiva_productos_wizard</field>
+            <field name="arch" type="xml">
+                <form string="Carga de Producto y Variantes">
+                    <!-- PANTALLA 1-->
+                    <group states="choose">
+                        <group col="4">
+                            <field name="file" required="1"/>
+                        </group>
+                    </group>
+                    <footer states="choose">
+                        <button type="object" name="import_file" string="importar" class="oe_highlight"/>
+                        <button string="Cerrar" class="oe_link" special="cancel"/>
+                        <field invisible="1" name="state"/>
+                    </footer>
+                    <!-- PANTALLA 2-->
+                    <group colspan="4" col="4" states="done">
+                        <separator string="Fin del proceso" colspan="4"/>
+                        <field name="info" colspan="4" nolabel="1"/>
+                    </group>
+                    <footer states="done">
+                        <button special="cancel" class="oe_link" string="Cerrar"/>
+                    </footer>
+                </form>
+            </field>
+        </record>
+        <record id="action_carga_productos" model="ir.actions.act_window">
+            <field name="name">Carga de Productos y variantes</field>
+            <field name="res_model">townconnection.carga_masiva_productos_wizard</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+        </record>
+
+    </data>
+</odoo>

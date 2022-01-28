@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<data>
+		<menuitem id="menu_botella" name="Productos" web_icon="botella_menu,static/description/icon.png"/>
+		<menuitem id="submenu_botella" name="Alta Productos" parent="menu_botella" sequence="1"/>
+		<menuitem id="carga_productos" name="Productos" action="website_sale.product_template_action_website" parent="submenu_botella" sequence="2"/>
+		<menuitem id="carga_categoria_ecommerce" name="Categoria de ecommerce" action="website_sale.product_public_category_action" parent="submenu_botella" sequence="3"/>
+		<menuitem id="menu_packaging" name="Empaquetados del producto" action="product.action_packaging_view" parent="submenu_botella" sequence="4"/>
+		<menuitem id="menu_manufacter" name="Fabricante" action="product_brand.action_product_brand" parent="submenu_botella" sequence="5"/>
+		<menuitem id="menu_import_image" name="Importar imagenes de productos" action="import_product_image.import_image_action_form" parent="submenu_botella" sequence="6"/>
+		<menuitem id="menu_import_manufacture" name="Importar imagenes de fabricantes" action="import_product_image.import_manufacture_image_action_form" parent="submenu_botella" sequence="7"/>
+		<menuitem id="menu_carga_productos" name="Importar variantes" action="import_product_variant.import_product_variant_action" parent="submenu_botella" groups="stock.group_stock_user" sequence="8"/>
+
+	</data>
+</odoo>

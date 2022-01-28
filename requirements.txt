@@ -1,0 +1,31 @@
+docker exec -u odoo odoo13_botella pip3 install --upgrade pip
+docker exec -u 0 -it odoo13_botella bash
+apt update
+apt install git
+
+# Luego instalar todos estos paquetes:
+docker exec -u odoo odoo13_botella pip3 install 
+pyOpenSSL
+M2Crypto
+httplib2>=0.7
+git+https://github.com/pysimplesoap/pysimplesoap@e1453f385cee119bf8cfb53c763ef212652359f5
+git+https://github.com/ingadhoc/pyafipws@py3k
+paramiko
+openpyxl
+cachetools
+cerberus
+pyquerystring
+parse-accept-language
+apispec
+Pygments
+git+https://github.com/edgewall/genshi@stable/0.7.x
+git+https://github.com/adhoc-dev/aeroolib@master-fix-ods
+git+https://github.com/aeroo/currency2text.git
+
+
+# Validar porque estos modulo no los encuentra
+# web_cohort
+# web_dashboard
+# web_map
+# mail_enterprise
+# sale_enterprise

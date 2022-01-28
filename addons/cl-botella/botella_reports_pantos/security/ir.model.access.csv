@@ -1,0 +1,3 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_botella_reports_pantos_occupied_position,access_botella_reports_pantos_occupied_position,model_botella_reports_pantos_occupied_position,base.group_user,1,1,1,1 
+access_botella_reports_pantos_internal_movement,access_botella_reports_pantos_internal_movement,model_botella_reports_pantos_internal_movement,base.group_user,1,1,1,1

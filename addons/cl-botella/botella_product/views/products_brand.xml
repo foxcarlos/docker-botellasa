@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+      <record model="ir.ui.view" id="view_product_brand_tree_inherit">
+        <field name="name">product.brand</field>
+        <field name="model">product.brand</field>
+        <field name="inherit_id" ref="product_brand.view_product_brand_tree"/>
+        <field name="arch" type="xml">
+            <field name="description" position="before">
+              <field name="code" />
+            </field>
+        </field>
+      </record>
+
+      <record model="ir.ui.view" id="view_product_brand_form_inherit">
+        <field name="name">product.brand</field>
+        <field name="model">product.brand</field>
+        <field name="inherit_id" ref="product_brand.view_product_brand_form"/>
+        <field name="arch" type="xml">
+            <field name="partner_id" position="after">
+              <field name="code" />
+              <field name="manufacture_name" />
+              <field name="historia_bodega_corta" />
+              <field name="historia_bodega_larga" />
+            </field>
+        </field>
+      </record>
+
+    </data>
+</odoo>

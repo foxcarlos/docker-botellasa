@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <!-- Country filter -->
+    <template id="list_countries">
+        <ul class="nav nav-pills flex-column pro_country">
+            <t t-foreach="countries" t-as="country">
+                <li class="nav-item">
+                    <label style="margin: 0 20px;" t-attf-class="nav-link#{' active' if country.id in country_set else ''}">
+                        <input type="checkbox"
+                        name="countries"
+                        t-att-value="'%s-%s' % (country.name,country.id)"
+                        t-att-checked="'checked' if country.id in country_set else None"/>
+                        <span style="font-weight: normal"
+                            t-field="country.name" />
+                    </label>
+                </li>
+            </t>
+        </ul>
+    </template>
+    <template id="website_product_country_filter"
+        inherit_id="website_sale.products_attributes"
+        name="Product Country's Filter"
+        customize_show="True" active="True">
+        <xpath expr="//form[hasclass('js_attributes')]//ul[hasclass('nav')]" position="inside">
+            <t t-if="countries">
+                <li class="country_clear">
+                    <div id="country_name">
+                        <strong>Paises</strong>
+                    </div>
+                    <t t-if="len(countries)&gt;4">
+                        <div id='filter_div'>
+                            <t t-call="botella_website_filters.list_countries" />
+                        </div>
+                    </t>
+                    <t t-if="len(countries)&lt;=4">
+                        <t t-call="botella_website_filters.list_countries" />
+                    </t>
+                </li>
+            </t>
+        </xpath>
+    </template>
+
+</odoo>

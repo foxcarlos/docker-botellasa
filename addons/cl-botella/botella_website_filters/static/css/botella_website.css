@@ -1,0 +1,17 @@
+.ti-bodegaflag {
+	width: 30px !important;
+	position: absolute;
+	top: 10px;
+	margin-top: 13px;
+	right: 11px;
+}
+
+#filter_div {
+	height: 100px;
+	overflow-y: scroll;
+}
+
+body {
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}

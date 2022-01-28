@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- Creo wizard y acción de importación del archivo-->
+        <record id="internal_movement_xls_view" model="ir.ui.view">
+            <field name="name">internal_movement</field>
+            <field name="model">botella_reports_pantos.internal_movement</field>
+            <field name="arch" type="xml">
+                <form string="Movimientos internos">
+                    <header>
+                        <button name="export_file" string="Exportar Reporte" type="object"
+                                class="btn-primary"/>
+                    </header>
+                    <sheet>
+                        <group>
+                            <field name="file_report" filename="file_name" readonly="True"/>
+                            <field name="file_name" invisible="1" />
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <record id="action_internal_movement_xls" model="ir.actions.act_window">
+            <field name="name">Movimientos internos</field>
+            <field name="res_model">botella_reports_pantos.internal_movement</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="view_mode">form</field>
+            <field name="view_type">form</field>
+            <field name="target">new</field>
+        </record>
+
+        <menuitem name="Movimientos Internos" 
+                id="submenu_export_InternalMovement"  
+                parent="menu_export_OccupiedPosition"
+                action="action_internal_movement_xls" 
+                sequence="2"/>
+
+    </data>
+</odoo>

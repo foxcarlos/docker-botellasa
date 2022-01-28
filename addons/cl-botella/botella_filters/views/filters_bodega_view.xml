@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record model='ir.ui.view' id='view_tree_product_bodega'>
+            <field name='name'>product.bodega.tree</field>
+            <field name='model'>product.bodega</field>
+            <field name='type'>tree</field>
+            <field name='arch' type='xml'>
+                <tree>
+                    <field name="name" />
+                    <field name="manufacter_id" />
+                    <field name="state_id" />
+                    <field name="region_id" />
+                    <field name="zona_id" />
+                </tree>
+            </field>
+        </record>
+        <record  model="ir.ui.view" id="view_form_product_bodega">
+            <field name="name">producto bodega Form</field>
+            <field name="model">product.bodega</field>
+            <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group name="group_top">
+                        <group name="group_left">
+                            <field name="name" />
+                            <field name="manufacter_id" />
+                            <field name="state_id"/>
+                            <field name="region_id"/>
+                            <field name="zona_id"/> 
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+            </field>
+        </record>
+
+        <act_window id="action_filters_bodega" name="Bodegas" res_model="product.bodega" view_mode="tree,form"/>
+        <menuitem id="filtro_bodega" name="Bodegas" action="action_filters_bodega" parent="submenu_filtros" sequence="5"/>
+    </data>
+</odoo>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <record id="product_import_image_wizard_form_view" model="ir.ui.view">
+            <field name="name">product.import.image.form</field>
+            <field name="model">import.product_image</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Products Image Import">
+                    <!-- PANTALLA 1-->
+                    <group states="choose">
+                        <group>
+                            <field name="product_model"/>
+                            <field name="file" filename="filename"/>
+                            <field name="url" />
+                        </group>
+                        <group>
+                            <field name="pdt_operation"/>
+                            <field name="search_field"/>
+                        </group>
+                    </group>
+                    <footer states="choose">
+                        <button class="oe_highlight" string="Import File" name="import_file" type="object"/> or
+                        <button class="oe_link" string="Cancel" special="cancel"/>
+                        <field invisible="1" name="state"/>
+                    </footer>
+                    <!-- PANTALLA 2-->
+                    <group colspan="4" col="4" states="done">
+                        <separator string="Fin del proceso" colspan="4"/>
+                        <field name="info" colspan="4" nolabel="1"/>
+                    </group>
+                    <footer states="done">
+                        <button special="cancel" class="oe_link" string="Cerrar"/>
+                    </footer>
+                </form>
+            </field>
+        </record>
+
+        <!--Product image menu item-->
+        <record id="import_image_action_form" model="ir.actions.act_window">
+            <field name="name">Import Product Image</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">import.product_image</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+            <field name="context">{'default_product_model': 'product.template','default_search_field': 'barcode'}</field>
+        </record>
+
+    <menuitem name="Import Product Image" id="menu_import_product_image"  parent="sale.product_menu_catalog"
+              action="import_image_action_form" sequence="22"/>
+
+
+        <!--Manufacture image menu item-->
+        <record id="import_manufacture_image_action_form" model="ir.actions.act_window">
+            <field name="name">Import Manufacture Image</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">import.product_image</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+            <field name="context">{'default_product_model': 'product.brand','default_search_field': 'code'}</field>
+        </record>
+
+    <menuitem name="Import Manufacture Image" id="menu_import_manufacture_image"  parent="sale.product_menu_catalog"
+              action="import_manufacture_image_action_form" sequence="22"/>
+    </data>
+</odoo>

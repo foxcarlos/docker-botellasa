@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='UTF-8'?>
+    <openerp>
+        <data noupdate='1'>
+        <record id='ubicacion_001' model='product.packaging'>
+            <field name='name'>Posición 001</field>
+            <field name='width'>100</field>
+            <field name='height'>230</field>
+            <field name='length'>120</field>
+        </record>
+        <record id='ubicacion_002' model='product.packaging'>
+            <field name='name'>Posición 002</field>
+            <field name='width'>100</field>
+            <field name='height'>180</field>
+            <field name='length'>120</field>
+        </record>
+        <record id='ubicacion_003' model='product.packaging'>
+            <field name='name'>Posición 003</field>
+            <field name='width'>100</field>
+            <field name='height'>160</field>
+            <field name='length'>120</field>
+        </record>
+        <record id='ubicacion_004' model='product.packaging'>
+            <field name='name'>Posición 004</field>
+            <field name='width'>100</field>
+            <field name='height'>50</field>
+            <field name='length'>120</field>
+        </record>
+        <record id='ubicacion_005' model='product.packaging'>
+            <field name='name'>Posición 005</field>
+            <field name='width'>100</field>
+            <field name='height'>80</field>
+            <field name='length'>120</field>
+        </record>
+        <record id='ubicacion_006' model='product.packaging'>
+            <field name='name'>Posición 006</field>
+            <field name='width'>100</field>
+            <field name='height'>30</field>
+            <field name='length'>50</field>
+        </record>
+        <record id='ubicacion_007' model='product.packaging'>
+            <field name='name'>Posición 007</field>
+            <field name='width'>100</field>
+            <field name='height'>65</field>
+            <field name='length'>120</field>
+        </record>
+        <record id='ubicacion_008' model='product.packaging'>
+            <field name='name'>Posición 008</field>
+            <field name='width'>100</field>
+            <field name='height'>40</field>
+            <field name='length'>120</field>
+        </record>
+        <record id='ubicacion_009' model='product.packaging'>
+            <field name='name'>Posición 009</field>
+            <field name='width'>60</field>
+            <field name='height'>40</field>
+            <field name='length'>50</field>
+        </record>
+        <record id='ubicacion_010' model='product.packaging'>
+            <field name='name'>Posición 010</field>
+            <field name='width'>90</field>
+            <field name='height'>40</field>
+            <field name='length'>50</field>
+        </record>
+        <record id='ubicacion_011' model='product.packaging'>
+            <field name='name'>Posición 011</field>
+            <field name='width'>45</field>
+            <field name='height'>65</field>
+            <field name='length'>90</field>
+        </record>
+        <record id='ubicacion_012' model='product.packaging'>
+            <field name='name'>Posición 012</field>
+            <field name='width'>90</field>
+            <field name='height'>40</field>
+            <field name='length'>90</field>
+        </record>
+        <record id='ubicacion_999' model='product.packaging'>
+            <field name='name'>Posición 999</field>
+            <field name='width'>999</field>
+            <field name='height'>999</field>
+            <field name='length'>999</field>
+        </record>
+    </data>
+</openerp>

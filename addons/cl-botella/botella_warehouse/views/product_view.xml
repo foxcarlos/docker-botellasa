@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+    	<menuitem name="Códigos de Barra de Productos" id="product_barcode_menu" action="stock_barcode.product_action_barcodes" parent="stock.menu_stock_inventory_control" sequence="229"/>
+
+    	<record id="stock_barcode.product_action_barcodes" model="ir.actions.act_window">
+		    <field name="domain">['&amp;', ('sale_ok', '=', True), '&amp;', ('active', '=', True), ('type', '=', 'product')]</field>
+		</record>
+
+		<record model="ir.ui.view" id="product_view_list_barcodes_inherit">
+        <field name="name">product.product.tree</field>
+        <field name="model">product.product</field>
+        <field name="inherit_id" ref="stock_barcode.product_view_list_barcodes"/>
+        <field name="arch" type="xml">
+            <field name="barcode" position="after">
+                <field name="box_barcode"/>
+            </field>
+
+        </field>
+        </record>
+
+		<record model="ir.ui.view" id="product_packaging_tree_view_inherit">
+        <field name="name">product.packaging.tree</field>
+        <field name="model">product.packaging</field>
+        <field name="inherit_id" ref="product.product_packaging_tree_view"/>
+        <field name="arch" type="xml">
+            <field name="name" position="after">
+                <field name="barcode"/>
+            </field>
+
+        </field>
+        </record>
+
+        <record model="ir.ui.view" id="product_template_only_form_view_inherit">
+        <field name="name">product</field>
+        <field name="model">product.template</field>
+        <field name="inherit_id" ref="product.product_template_only_form_view"/>
+        <field name="arch" type="xml">
+            <field name="barcode" position="after">
+                <field name="box_barcode"/>
+            </field>
+        </field>
+        </record>
+
+        <record model="ir.ui.view" id="product_template_search_view_inherit">
+        <field name="name">product</field>
+        <field name="model">product.template</field>
+        <field name="inherit_id" ref="product.product_template_search_view"/>
+        <field name="arch" type="xml">
+            <field name="name" position="replace">
+                <field name="name" string="Product" filter_domain="['|', '|', '|',  '|', ('default_code', 'ilike', self), ('product_variant_ids.default_code', 'ilike', self),('name', 'ilike', self), ('barcode', 'ilike', self), ('box_barcode', 'ilike', self)]"/>
+                <field name="box_barcode" />
+            </field>
+        </field>
+        </record>
+
+        <record model="ir.ui.view" id="product_search_form_view_inherit">
+        <field name="name">product</field>
+        <field name="model">product.product</field>
+        <field name="inherit_id" ref="product.product_search_form_view"/>
+        <field name="arch" type="xml">
+            <field name="name" position="replace">
+                <field name="name" string="Product" filter_domain="['|', '|', '|', ('default_code', 'ilike', self), ('name', 'ilike', self), ('barcode', 'ilike', self), ('box_barcode', 'ilike', self)]"/>
+                <field name="box_barcode" />
+            </field>
+        </field>
+        </record>
+
+        <record model="ir.ui.view" id="product_template_form_view_procurement_button_inherit">
+        <field name="name">product</field>
+        <field name="model">product.template</field>
+        <field name="inherit_id" ref="stock.product_template_form_view_procurement_button"/>
+        <field name="arch" type="xml">
+            <xpath expr="//button[@name='action_update_quantity_on_hand']" position="attributes">
+                <attribute name="groups">stock.group_stock_manager</attribute>
+            </xpath>
+        </field>
+        </record>
+
+        <record model="ir.ui.view" id="stock.product_template_form_view_procurement_button">
+            <field name="groups_id" eval="[(6,0, [ref('stock.group_stock_manager')])]"/>
+        </record>
+
+        <record model="ir.ui.view" id="product_template_form_view_inherit">
+        <field name="name">product</field>
+        <field name="model">product.template</field>
+        <field name="inherit_id" ref="product.product_template_form_view"/>
+        <field name="arch" type="xml">
+            <xpath expr="/form/header/button" position="attributes">
+                <attribute name="groups">stock.group_stock_manager</attribute>
+            </xpath>
+        </field>
+        </record>
+
+        <!--Valoraciòn de inventario-->
+        <record model="ir.ui.view" id="view_stock_product_tree2_inherit">
+        <field name="name">product.product.tree</field>
+        <field name="model">product.product</field>
+        <field name="inherit_id" ref="stock_account.view_stock_product_tree2"/>
+        <field name="arch" type="xml">
+            <field name="display_name" position="attributes">
+                <attribute name="invisible">1</attribute>
+            </field>
+            <field name="display_name" position="after">
+                <field name="default_code"/>
+                <field name="description_pickingout"/>
+                <field name="barcode"/>
+                <field name="box_barcode"/>
+                <field name="uom_po_id"/>
+            </field>
+        </field>
+        </record>
+
+        <record model="ir.ui.menu" id="stock_account.menu_valuation">
+            <field name="groups_id" eval="[(6,0, [ref('stock.group_stock_manager')])]"/>
+        </record>
+
+        <record model="ir.ui.menu" id="stock.menu_warehouse_report">
+            <field name="groups_id" eval="[(6,0, [ref('stock.group_stock_manager'),ref('stock.group_stock_user')])]"/>
+        </record>
+
+        <!--Lineas de ajuste de inventario-->
+        <record model="ir.ui.view" id="stock_inventory_line_tree2_inherit">
+        <field name="name">stock.inventory.line.tree</field>
+        <field name="model">stock.inventory.line</field>
+        <field name="inherit_id" ref="stock.stock_inventory_line_tree2"/>
+        <field name="arch" type="xml">
+            <field name="product_id" position="before">
+                <field name="default_code"/>
+            </field>
+            <field name="product_uom_id" position="after">
+                <field name="uom_po_id"/>
+                <field name="barcode"/>
+                <field name="box_barcode"/>
+                <field name="price"/>
+            </field>
+        </field>
+        </record>
+
+        <!--ajuste de inventario - muestro boton de detalle cuando está en confimado y validado-->
+        <record model="ir.ui.view" id="view_inventory_form_inherit">
+        <field name="name">stock.inventory.tree</field>
+        <field name="model">stock.inventory</field>
+        <field name="inherit_id" ref="stock.view_inventory_form"/>
+        <field name="arch" type="xml">
+            <button name="action_inventory_line_tree" position="replace">
+                <button name="action_inventory_line_tree" class="oe_stat_button" icon="fa-building-o" type="object" help="List view of lines" states="confirm,done">
+                        <div class="o_form_field o_stat_info">
+                            <span class="o_stat_text">Detalles</span>
+                        </div>
+                    </button>
+            </button>
+        </field>
+        </record>
+
+        <!--Reporte de inventario-->
+        <record model="ir.ui.view" id="view_stock_quant_tree_inherit">
+        <field name="name">stock.quant.tree</field>
+        <field name="model">stock.quant</field>
+        <field name="inherit_id" ref="stock.view_stock_quant_tree"/>
+        <field name="arch" type="xml">
+            <field name="product_id" position="after">
+                <field name="default_code"/>
+                <field name="uom_po_id"/>
+                <field name="barcode"/>
+                <field name="box_barcode"/>
+            </field>
+        </field>
+        </record>
+
+        <!--Movimientos de productos-->
+        <record model="ir.ui.view" id="view_move_line_tree_inherit">
+        <field name="name">stock.move.line.tree</field>
+        <field name="model">stock.move.line</field>
+        <field name="inherit_id" ref="stock.view_move_line_tree"/>
+        <field name="arch" type="xml">
+            <field name="product_id" position="after">
+                <field name="default_code"/>
+                <field name="uom_po_id"/>
+                <field name="barcode"/>
+                <field name="box_barcode"/>
+            </field>
+        </field>
+        </record>
+
+        <!--Movimientos de stock-->
+        <record model="ir.ui.view" id="view_move_tree_inherit">
+        <field name="name">stock.move.tree</field>
+        <field name="model">stock.move</field>
+        <field name="inherit_id" ref="stock.view_move_tree"/>
+        <field name="arch" type="xml">
+            <field name="product_id" position="after">
+                <field name="default_code"/>
+                <field name="uom_po_id"/>
+                <field name="barcode"/>
+                <field name="box_barcode"/>
+            </field>
+        </field>
+        </record>
+
+        <!--stock location-->
+        <record model="ir.ui.view" id="view_location_form_inherit">
+        <field name="name">stock.location.tree</field>
+        <field name="model">stock.location</field>
+        <field name="inherit_id" ref="stock.view_location_form"/>
+        <field name="arch" type="xml">
+            <field name="barcode" position="after">
+                <field name="packaging_id" domain="[('product_id','=',False)]"/>
+                <field name="height" />
+                <field name="width" />
+                <field name="length" />
+            </field>
+        </field>
+        </record>
+
+        <record model="ir.ui.view" id="view_location_tree2_inherit">
+        <field name="name">stock.location.tree</field>
+        <field name="model">stock.location</field>
+        <field name="inherit_id" ref="stock.view_location_tree2"/>
+        <field name="arch" type="xml">
+            <field name="company_id" position="after">
+                <field name="packaging_id" domain="[('product_id','=',False)]"/>
+                <field name="height" />
+                <field name="width" />
+                <field name="length" />
+            </field>
+        </field>
+        </record>
+
+        <!--Agrego boton validar en vista tree de picking-->
+        <record model="ir.ui.view" id="vpicktree_inherit">
+            <field name="name">stock.picking.tree</field>
+            <field name="model">stock.picking</field>
+            <field name="inherit_id" ref="stock.vpicktree"/>
+            <field name="arch" type="xml">
+                <field name="picking_type_id" position="after">
+                    <button name="button_validate" attrs="{'invisible': ['|', ('state', 'in', ('waiting','confirmed')), ('show_validate', '=', False)]}" string="Validar" type="object" class="oe_highlight" groups="stock.group_stock_user"/>
+                    <button name="button_validate" attrs="{'invisible': ['|', ('state', 'not in', ('waiting', 'confirmed')), ('show_validate', '=', False)]}" string="Validar" type="object" groups="stock.group_stock_user" class="o_btn_validate"/>
+                    <field name="show_validate" invisible="1"/>
+                </field>
+            </field>
+        </record>
+
+        <!--En packages primero vista tree-->
+        <record id="stock.action_package_view" model="ir.actions.act_window">
+            <field name="view_mode">tree,kanban,form</field>
+        </record>
+
+        <!--oculto campo website vista tree de products-->
+        <record model="ir.ui.view" id="product_template_website_tree_view_inherit">
+            <field name="name">product.template.tree</field>
+            <field name="model">product.template</field>
+            <field name="inherit_id" ref="website_sale.product_template_website_tree_view"/>
+            <field name="arch" type="xml">
+                <field name="website_id" position="attributes">
+                    <attribute name="invisible">1</attribute>
+                </field>
+            </field>
+        </record>
+
+
+
+
+    </data>
+</odoo>
